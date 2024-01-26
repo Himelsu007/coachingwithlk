@@ -45,7 +45,7 @@ img { height:auto; width:100%; }
   background-image:url('../../src/assets/images/mobile-banner-home-blur.jpg');  background-repeat:no-repeat; background-size:cover; background-position:-70px; 
 }
 
-#section_01 > article {  border:1px solid rgb(214, 0, 0); height:550px; display:flex; align-items:center;  justify-content:center; flex-direction:column; width:100%;  backdrop-filter: blur(6px); background-color: #ffffff83; }
+#section_01 > article { height:550px; display:flex; align-items:center;  justify-content:center; flex-direction:column; width:100%;  backdrop-filter: blur(6px); background-color: #ffffff83; }
 
 #section_logo_container {  width:320px; max-height:60px; display:flex; align-items:center; justify-content:flex-start; position:relative; }
 #section_logo_container img { position:relative; right:60px; }

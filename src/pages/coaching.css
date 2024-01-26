@@ -128,3 +128,4 @@ footer { max-height:110px; display:flex; flex-direction:column; align-items:cent
 #footer_container_A > h3  { font-family:var(--font-01); }
 #footer_container_C  { display:flex; align-items:center; justify-content:center; }
 #footer_container_C > a { color:white; font-size:10px;  } 
+  

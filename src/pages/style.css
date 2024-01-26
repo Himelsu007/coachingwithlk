@@ -274,7 +274,7 @@ footer { max-height:110px; display:flex; flex-direction:column; align-items:cent
 
 .articles_container:nth-child(4) { display:flex; }
 
-#section_001 { min-height:300px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between; border:1px solid #ff0000; flex-direction:row; max-width:1920px; }
+#section_001 { min-height:300px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px; }
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
 
 #section_logo_container {  width:210px; max-height:60px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  }
@@ -323,7 +323,7 @@ font-family:var(--font-02); }
   
   .articles_container:nth-child(4) { display:flex; }
   
-  #section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between; border:1px solid #ff0000; flex-direction:row;  }
+  #section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row;  }
   #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
   
   
@@ -374,7 +374,7 @@ font-family:var(--font-02); }
 .articles_container:nth-child(6) { display:flex; }
 .courses_container:nth-child(3) { display:flex; }
 
-#section_001 { min-height:300px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:flex-end; border:1px solid #ff0000; flex-direction:row; max-width:1920px; gap:60px; padding-left:20px;  }
+#section_001 { min-height:300px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:flex-end;  flex-direction:row; max-width:1920px; gap:60px; padding-left:20px;  }
 
 #section_logo_container {  width:300px; max-height:60px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  margin-left:70px; }
 #section_logo_container > img { width:100%; position:relative; right:69px; }
@@ -431,7 +431,7 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
 
-#section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between; border:1px solid #ff0000; flex-direction:row;  }
+#section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row;  }
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
 
 

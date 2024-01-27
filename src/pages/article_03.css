@@ -54,7 +54,7 @@ img      { height:auto; width:100%;                      }
 
 #section_02 > article { min-height:70px;  max-width:995px;  display:flex; flex-direction:row; justify-content:space-between; align-items:center; gap:20px;  }
 
-#section_02_img_container { width:65px; height:65px; border-radius:50%;background-image:url('/src/assets/images/lara-sitting-straight-face.JPG'); background-repeat:no-repeat; background-size:cover; }
+#section_02_img_container { width:65px; height:65px; border-radius:50%; background-image:url('/src/assets/images/lara-sitting-straight-face.JPG');   background-repeat:no-repeat; background-size:cover; }
 
 #section_02_occupation_container {  height:49px; max-width:295px; display:flex; flex-direction:column; align-items:flex-start; justify-content:center;   }
 #section_02_occupation_container h3 { font-family:var(--font-02); font-size:20px; font-weight:500; }

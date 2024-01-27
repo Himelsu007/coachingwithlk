@@ -103,20 +103,3 @@ img      { height:auto; width:100%;                      }
 .section_04_text_container > p { text-align:justify;   }
 
 
-/* Animations  */
-
-.loader_pg {
-    width: 48px; height: 48px; border-radius: 50%; display: inline-block; border-top: 3px  #000000;
-    border-right: 3px  transparent; box-sizing: border-box; animation: rotation 1s linear infinite;
-  }
-  
-  .loader_overlay {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgb(255, 255, 255); backdrop-filter:blur(40px);
-      display: none; /* Initially hidden */ align-items: center; justify-content: center; opacity: 0; transition: opacity 0.5s ease-in-out;  z-index: 99999;
-  }
-  
-  @keyframes rotation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } 
-  

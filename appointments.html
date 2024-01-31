@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#F5EDEA">
     <link rel="icon" href="./src/assets/icons/fav_icon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="./src/assets/icons/fav_icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./src/assets/icons/fav_icon/apple-icon-60x60.png">
@@ -19,9 +18,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./src/assets/icons/fav_icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icons/fav_icon/favicon-16x16.png">
     <link rel="manifest" href="./src/assets/icons/fav_icon/manifest.json">
-    <link rel="stylesheet" href="./src/pages/appointments.css">    
-    <link rel="stylesheet" href="./src/components/menu.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="appointments.css">    
+    <link rel="stylesheet" href="menu.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
     <title> Appointments </title>
@@ -31,7 +29,7 @@
     <header>
         <div class="header">
             
-        <a href="index.html" class="header__logo"> <img  src="./src/assets/icons/logo_letters_white.svg" alt=""></a>
+        <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
         <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
@@ -40,19 +38,19 @@
                     <div class="nav__img"> </div>
                     
                     <div>
-                        <a href="./public/index.html" class="nav__name"> <img  src="./src/assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
+                        <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
                         <span class="nav__profesion"> LIFE COACH </span>
                     </div>
                 </div>
 
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item"> <a href="index.html" class="nav__link active">  Home         </a> </li>
+                        <li class="nav__item"> <a href="#" class="nav__link active">  Home         </a> </li>
                         <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
                         <!-- <li class="nav__item"> <a href="courses.html" class="nav__link">  Courses    </a> </li> -->
-                        <!-- <li class="nav__item"> <a href="#section_06" class="nav__link" style="color:rgba(255, 0, 0, 0.798);">  Blogs      </a> </li> -->
+                        <li class="nav__item"> <a href="blog.html" class="nav__link">  Articles      </a> </li>
+                        <li class="nav__item"> <a href="./about.html" class="nav__link">  About Me   </a> </li>
                         <li class="nav__item"> <a href="coaching.html" class="nav__link">  Coaching   </a> </li>
-                        <li class="nav__item"> <a href="about.html" class="nav__link">  About Me   </a> </li>
                     </ul>
                 </div>
 
@@ -78,8 +76,6 @@
 <script src="./javascript/burguer_menu.js"> </script>
 <script src="./javascript/reveal_animation.js"> </script>
 <script src="./javascript/menu_hide_appear_function.js"> </script>
-<script src="./javascript/tab_widget.js"> </script>
-<script src="./javascript/know_more.js"> </script>
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script src="./javascript/footer_year_auto_update.js"> </script>

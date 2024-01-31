@@ -3,36 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#F5EDEA"> 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <link rel="stylesheet" href="./src/pages/about.css">
-    <link rel="icon" href="./src/assets/icons/fav_icon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/assets/icons/fav_icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/assets/icons/fav_icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/assets/icons/fav_icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/assets/icons/fav_icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./src/assets/icons/fav_icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./src/assets/icons/fav_icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./src/assets/icons/fav_icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./src/assets/icons/fav_icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/icons/fav_icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./src/assets/icons/fav_icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icons/fav_icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/assets/icons/fav_icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icons/fav_icon/favicon-16x16.png">
-    <link rel="manifest" href="./src/assets/icons/fav_icon/manifest.json">
-    <link rel="stylesheet" href="./src/components/menu.css">    
+    <meta name="theme-color" content="#F5EDEA"> <!-- Replace "#yourColor" with your desired color code -->
+    <link rel="stylesheet" href="styles/css/about.css">
+    <link rel="stylesheet" href="menu.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title> About </title>
 </head>
 
 <body>
-
     <header>
         <div class="header">
             
-        <a href="index.html" class="header__logo"> <img  src="./src/assets/icons/logo_letters_white.svg" alt=""></a>
+        <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
         <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
@@ -41,8 +23,8 @@
                     <div class="nav__img"> </div>
                     
                     <div>
-                        <a href="./public/index.html" class="nav__name"> <img  src="./src/assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
-                        <span class="nav__profesion">  </span>
+                        <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
+                        <span class="nav__profesion"> LIFE COACH </span>
                     </div>
                 </div>
 
@@ -51,9 +33,9 @@
                         <li class="nav__item"> <a href="index.html" class="nav__link active">  Home         </a> </li>
                         <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
                         <!-- <li class="nav__item"> <a href="courses.html" class="nav__link">  Courses    </a> </li> -->
-                        <!-- <li class="nav__item"> <a href="#section_06" class="nav__link" style="color:rgba(255, 0, 0, 0.798);">  Blogs      </a> </li> -->
+                        <li class="nav__item"> <a href="blog.html" class="nav__link">  Articles      </a> </li>
+                        <li class="nav__item"> <a href="./about.html" class="nav__link">  About Me   </a> </li>
                         <li class="nav__item"> <a href="coaching.html" class="nav__link">  Coaching   </a> </li>
-                        <li class="nav__item"> <a href="about.html" class="nav__link">  About Me   </a> </li>
                     </ul>
                 </div>
 
@@ -66,9 +48,7 @@
         </nav>
     </div>
     </header>
-    <div class="loader_overlay">
-        <span class="loader_pg"> </span>
-    </div>
+    
       <article class="o-grid">
         <header class="o-grid__area-01 o-header u-txt-center">
             <h1 class="c-heading c-heading--01"> About Me </h1>
@@ -79,7 +59,7 @@
         </div>
         <section class="o-grid__area-03 o-profile">
             <div class="o-profile__inner">
-                <figure class="o-media"> <img class="o-media__img" src="./src/assets/images/main-profile-pi-min.jpg"> </figure>
+                <figure class="o-media"><img class="o-media__img" src="./assets/images/ig-profile-picture-min.jpg" alt="Albertus Seba showing a lizard in a bottle" /> </figure>
                 <p>
                     Hello, I'm Lara, and my journey into life coaching is deeply rooted in my personal story. 
                     Growing up with strict parents in a racially charged environment, I navigated a failed school system that stifled my creativity and personal growth.
@@ -115,11 +95,12 @@
 
 </body>
 
-
-<script src="./src/javascript/reveal_animation.js"></script>
-<script src="./src/javascript/menu_hide_appear_function.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-<script src="./src/javascript/loader.js"></script>
+<script src="./javascript/burguer_menu.js"></script>
+<script src="./javascript/reveal_animation.js"></script>
+<script src="./javascript/menu_hide_appear_function.js"></script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="./javascript/footer_year_auto_update.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
 </html>
 

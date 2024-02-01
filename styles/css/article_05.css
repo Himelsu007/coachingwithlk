@@ -1,15 +1,11 @@
 @charset "utf-8"; 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 * { margin:0px; padding:0px; box-sizing:border-box;  }
 
@@ -21,10 +17,11 @@
             --light-blue:#037486;
             --dark-gray:hwb(228 82% 16%);
             --coach-container:hwb(188 1% 47% / 0.478);;
-            --font-01:'Cormorant';
+            --font-01:'Inter';
             --font-02:'Playfair Display';
-            --font-03:'montserrat ';
-            --font-04:'Josefin Sans';
+            --font-03:'DM Sans';
+            --font-04:'MontSerrat';
+            --font-05:'Proxima Nova Condensed'
 
 }
 
@@ -55,8 +52,8 @@ img      { height:auto; width:100%;                      }
 #section_02_img_container { width:65px; height:65px; border-radius:50%;background-image:url('../../assets/images/lara-sitting-straight-face.JPG'); background-repeat:no-repeat; background-size:cover; }
 
 #section_02_occupation_container {  height:49px; max-width:295px; display:flex; flex-direction:column; align-items:flex-start; justify-content:center;   }
-#section_02_occupation_container h3 { font-family:var(--font-01); font-size:20px }
-#section_02_occupation_container h5 { font-family:var(--font-01); font-size:20px }
+#section_02_occupation_container h3 { font-family:var(--font-02); font-size:20px; font-weight:500; }
+#section_02_occupation_container h5 { font-family:var(--font-02); font-size:20px; font-weight:500; }
 
 /* Section 03 */
 
@@ -96,8 +93,8 @@ div.blue_box {  width:110px; height:70px; display:flex; align-items:center; just
 .big_text_container > h2 { font-size:25px; text-align:justify; color:#006170; font-style: italic;}
 
 .section_03_text_container > h1 { text-align:center; color:#006170; font-family:var(--font-02);}
-.section_03_text_container > p { text-align:justify; font-family:var(--font-01); font-size:22px; }
-.section_03_text_container > h4 { text-align:justify; font-family:var(--font-01); font-size:22px; }
+.section_03_text_container > p { text-align:justify; font-family:var(--font-02); font-size:22px; }
+.section_03_text_container > h4 { text-align:justify; font-family:var(--font-02); font-size:22px; }
 .section_03_text_container > p::first-letter { font-size: 90px;  float:left;  line-height:0.5; margin:15px 15px 10px 0; } 
 
 .section_04_text_container  { 

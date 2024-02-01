@@ -160,7 +160,7 @@ img { height:auto; width:100%; }
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:not-allowed;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.757); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
-.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease;  cursor:pointer;}
+.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; }
 .articles_container:hover { scale:1.05; }
 
 .articles_container:nth-child(4) { display:none; }

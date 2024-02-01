@@ -126,6 +126,7 @@ footer { max-height:110px; display:flex; flex-direction:column; align-items:cent
 #footer_container_C > a { color:white; font-size:10px;  } 
 
 
+
 @media screen and ( min-width:890px ) { 
   #section_01_sub_container_A001 > img:nth-child(1) { display:none; }
   #section_01_sub_container_A001 > img:nth-child(2) { display:flex; }

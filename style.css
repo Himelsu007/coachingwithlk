@@ -42,7 +42,7 @@ img { height:auto; width:100%; }
 
 #section_01
 {  min-height:455px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-around;  flex-direction:row;
-  background-image:url('../../src/assets/images/mobile-banner-home-blur.jpg');  background-repeat:no-repeat; background-size:cover; background-position:-70px; 
+  background-image:url('/assets/images/mobile-banner-home-blur.png');  background-repeat:no-repeat; background-size:cover; background-position:-70px; 
 }
 
 #section_01 > article { height:550px; display:flex; align-items:center;  justify-content:center; flex-direction:column; width:100%;  backdrop-filter: blur(6px); background-color: #ffffff83; }
@@ -160,7 +160,7 @@ img { height:auto; width:100%; }
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:not-allowed;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.757); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
-.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; }
+.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
 .articles_container:hover { scale:1.05; }
 
 .articles_container:nth-child(4) { display:none; }
@@ -180,7 +180,7 @@ img { height:auto; width:100%; }
 .articles_sub_container_B {  border-top:1px solid gray; width:340px; height:38px; display:flex; align-items:center; justify-content:flex-start; }
 .articles_sub_container_B h4 {  margin-left:24px; color:gray; font-family:var(--font-03); font-size:13px; font-weight:400;}
 
-#articles_btn { max-width:300px; }
+#articles_btn { max-width:300px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
 
 .click_to_learn_more { width:200px; height:38px; background-color:var(--bege); border-radius:7px; display:flex; align-items:center; }
 .click_to_learn_more > img { width: 23px; margin-left:10px; }

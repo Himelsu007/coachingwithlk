@@ -158,9 +158,9 @@ img { height:auto; width:100%; }
 #section_06_heading > h1 {  color:white; font-family:var(--font-01); font-size:35px; text-align:center;}
 #section_06_heading { max-width:700px; margin-top:50px; margin-bottom:50px;}
 
-#articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:not-allowed;}
+#articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:pointer;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.757); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
-.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+.articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; }
 .articles_container:hover { scale:1.05; }
 
 .articles_container:nth-child(4) { display:none; }
@@ -180,7 +180,7 @@ img { height:auto; width:100%; }
 .articles_sub_container_B {  border-top:1px solid gray; width:340px; height:38px; display:flex; align-items:center; justify-content:flex-start; }
 .articles_sub_container_B h4 {  margin-left:24px; color:gray; font-family:var(--font-03); font-size:13px; font-weight:400;}
 
-#articles_btn { max-width:300px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+#articles_btn { max-width:300px; }
 
 .click_to_learn_more { width:200px; height:38px; background-color:var(--bege); border-radius:7px; display:flex; align-items:center; }
 .click_to_learn_more > img { width: 23px; margin-left:10px; }

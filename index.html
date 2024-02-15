@@ -24,6 +24,7 @@
     <link rel="manifest" href="assets/icons/fav_icon/manifest.json">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="menu.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -102,70 +103,62 @@
 </section>
 
 <section  id="section_04">
-    <article>
-        <div class="courses_container"> 
-            <div class="courses_sub_container_A" id="CSCA_01">  </div>    
-            <div class="courses_sub_container_B"> <h2 id="courseTitle"> Coming Soon </h2> </div>    
-            <div class="courses_sub_container_C">  
-                <dotlottie-player src="https://lottie.host/222c8e5a-8854-4f73-8481-010a6bd90a48/7NuM6eizGU.json" background="transparent" speed="1" style="width:200px; height:200px;" loop autoplay></dotlottie-player>
-            </div>    
-            <div class="courses_sub_container_D"> <a href="#section_04"> <button> Coming Soon </button> </a> 
-                <img src="assets/icons/score_number_05.svg"> </div>    
-        </div>
+    <div class="slide-container swiper">  
+        <div class="slide-content"> 
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"> </span>
 
-        <div class="courses_container"> 
-            <div class="courses_sub_container_A" id="CSCA_02">  </div>    
-            <div class="courses_sub_container_B"> <h2 id="courseTitle_02"> Coming Soon... </h2> </div>
-            <div class="courses_sub_container_C">  
-                <dotlottie-player src="https://lottie.host/222c8e5a-8854-4f73-8481-010a6bd90a48/7NuM6eizGU.json" background="transparent" speed="1" style="width:200px; height:200px;" loop autoplay></dotlottie-player>
-            </div>    
-            <div class="courses_sub_container_D"> <a href="#section_04"> <button> Coming Soon </button></a> 
-                <img src="assets/icons/Score.svg"> </div>    
-        </div>         
-        
-        <div class="courses_container"> 
-            <div class="courses_sub_container_A" id="CSCA_03">  </div>    
-            <div class="courses_sub_container_B"> <h2  id="courseTitle_03"> Coming Soon </h2> </div>    
-            <div class="courses_sub_container_C">  
-                <dotlottie-player src="https://lottie.host/222c8e5a-8854-4f73-8481-010a6bd90a48/7NuM6eizGU.json" background="transparent" speed="1" style="width:200px; height:200px;" loop autoplay></dotlottie-player>
-            </div>    
-            <div class="courses_sub_container_D"> <a href="#section_04"> <button> Coming Soon </button></a> 
-                <img src="assets/icons/Score.svg"> </div>    
-        </div>  
-    </article>
-    <a href="#section_04"> <button style="cursor:not-allowed; "> Explore all Courses  </button> </a>
-</section>
+                        <div class="card-image">
+                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
+                        </div>
+                    </div>
 
-<!-- <section  id="section_05">
-    <article>
-        <h1 class="reveal"> The Significance of Written and Reflective Records </h1>
-        <a href="#" class="reveal"> FREE </a>
-        <p class="reveal"> This Journal will change the way you view life coaching, i started breaking down some beliefs. </p>
-        <img class="reveal" src="/assets/images/book_sample.png" alt="">
-        <button class="wave"> Download Now  </button>
-    </article>
-</section>
+                    <div class="card-content"> 
+                        <h2 class="name"> Himelsu Test </h2>
+                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="section_04_button"> View More </button>
+                    </div>
+                </div>
 
-<section id="section_005">
-        <div id="section_005_A">
-            <div id="section_005_sub_container_A1"> 
-                <h1> Title of Journals </h1>
-                <h2> Free </h2>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"> </span>
+
+                        <div class="card-image">
+                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content"> 
+                        <h2 class="name"> Himelsu Test </h2>
+                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="section_04_button"> View More </button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"> </span>
+
+                        <div class="card-image">
+                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content"> 
+                        <h2 class="name"> Himelsu Test </h2>
+                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="section_04_button"> View More </button>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="swiper-pagination"></div>
 
-        <div> 
-            <p> This Journal will change the way you view 
-                life coaching. I started breaking down some 
-                beliefs.
-            </p>
-        </div>
-            <button id="section_005_btn"> Download Now  </button>
-        </div>
-
-        <div id="section_005_B">
-            
-        </div>
-</section> -->
+    </div>
+</section>
 
 
 <section id="section_02" >
@@ -383,32 +376,13 @@
 </body>
 
 <script src="javascript/reveal_animation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="javascript/swiper-bundle.min.js"></script>
 <script src="javascript/menu_hide_appear_function.js"></script>
 <script src="javascript/know_more.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="javascript/footer_year_auto_update.js"></script>
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-<script>
-    setTimeout(() => {
-        const courseTitle = "Resilience Revolution"; 
-        document.getElementById('courseTitle').innerText = courseTitle;
-    }, 2000); 
-</script>
-
-<script>
-    setTimeout(() => {
-        const courseTitle = "Mindset Mastery"; 
-        document.getElementById('courseTitle_02').innerText = courseTitle;
-    }, 2000); 
-</script>
-
-<script>
-    setTimeout(() => {
-        const courseTitle = "Career Transition"; 
-        document.getElementById('courseTitle_03').innerText = courseTitle;
-    }, 2000); 
-</script>
 
 <script defer>
 const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
@@ -427,11 +401,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     containers.forEach(container => {
         container.addEventListener('click', function (event) {
-            // Check if the clicked element is within the class 'articles_sub_container_AB'
             const clickedContainer = event.target.closest('.articles_sub_container_AB');
 
             if (clickedContainer) {
-                // Get the link within the clicked child and open it in the same page
                 const link = clickedContainer.querySelector('a');
                 if (link) {
                     window.location.href = link.href;
@@ -441,6 +413,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+</script>
+
+<script>
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 2,
+      spaceBetween: 200,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 </script>
 
 </html>

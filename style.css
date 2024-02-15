@@ -86,60 +86,11 @@ img { height:auto; width:100%; }
 /* Section 04 */
 
 #section_04 { 
-  max-height:910px; border:2px  black; display:flex; align-items:center; justify-content:center; flex-direction:column; width:100%; padding:40px; 
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,93,114,1) 0%, rgb(1, 69, 80) 0%, rgba(2,134,156,1) 100%, rgb(2, 144, 173) 100%); 
+  max-height:910px; border:2px  black; display:flex; align-items:center; justify-content:center;  width:100%; padding:40px; 
+  background:#EFEFEF;
 }
 
-#section_04 > article {
-   max-height:830px;  min-width:340px; max-width:1200px; display:flex; flex-direction:row; gap:20px; align-items:center;  justify-content:space-evenly; flex-wrap:wrap;   padding:10px;
-}
-
-#section_04 > a > button{ 
-  margin-top:10px;  background-color:var(--bege); color:black; padding:8px 20px;  border: none; font-weight:600;
-  font-size: 14px;  cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease; border-radius:5px; color:var(--light-blue); font-style:bold; }
-
-.courses_container { 
-  background-color:white; height:390px; min-width:290px; max-width:400px; border-radius:0px; display:flex; flex-direction:column;  
-  border: 1px  var(--stroke, #F1F1F1);  background:var(--bege); justify-content:center; border-radius:2px;
-}
-
-.courses_container:nth-child(3) { display:none; }
-
-#CSCA_01 { background-image:url('https://www.findawealthmanager.com/wp-content/uploads/2021/06/businessman-protection-money-table-with-tree.jpg'); }
-#CSCA_02 { background-image:url('https://efr.org/wp-content/uploads/2022/10/Growth-and-fixed-mindset_concept_lock-on-brain_grow-ideas_398033012-modified.png'); }
-#CSCA_03 { background-image:url('https://www.workitdaily.com/media-library/image.jpg?id=19295722&width=980&quality=85'); }
-
-.courses_sub_container_A { height:350px; min-width:300px; border-radius:10px;  background-repeat:no-repeat; background-size:cover; margin: 10px 10px 10px 10px; }
-.courses_container > .courses_sub_container_B { height:50px; width:auto;  margin: 0px 10px 10px 10px;  display:flex; align-items:center; justify-content:center; }
-
-.courses_sub_container_B h2 { font-family:var(--font-01); }
-.courses_sub_container_B .course_info { font-family:var(--font-02); }
-
-.courses_container > .courses_sub_container_C { height:50px; width:auto;  margin: 0px 10px 10px 10px;  display:flex; align-items:center; justify-content:center; }
-.main_box_students_and_more { width:79px; height:17px; }
-
-.courses_sub_container_D { height:80px; width:auto;  margin: 0px 10px 10px 10px;  display:flex; align-items:center; justify-content:space-between; flex-direction:row; }
-.courses_container > .courses_sub_container_D > a > button {
-  background-color: #070D1F; color: #fff; padding:8px 20px;  border: none;  font-size: 14px;  cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease; border-radius:5px;
-  font-family:var(--font-01);
-}
-
-.courses_container > .courses_sub_container_D > a > button:hover { background-color: #037486;  transform: scale(1.02); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); cursor:not-allowed;  }
-.courses_container > .courses_sub_container_D > img {  width:40px; }
-
-/* Section 05 */
-
-#section_005 { display:none; }
-
-#section_05 {  height:600px; background-color:var(--bege); border:2px  black; margin-top:10px; display:flex; align-items:center; justify-content:center; display:none; }
-#section_05 > article {  height:590px; width:350px; display:flex; flex-direction:column; align-items:center;  justify-content:space-between; flex:1; margin:20px; padding:10px; }
-#section_05 > article > h1 {   padding:10px; font-family:var(--font-02); font-size:14px; }
-#section_05 > article > a {  color:var(--light-blue); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  padding:10px; width:80px; }
-#section_05 > article > p { text-align:center;  padding:10px; }
-#section_05 > article > img { width:340px;  overflow:hidden; height:auto; }
-#section_05 > article > button { border:transparent; background-color:var(--light-blue); color:var(--bege); width:150px; border-radius:5px; }
-
-#section_006 { display:none; }
+#section_04 > article { max-height:1230px;  min-width:340px; max-width:1200px; display:flex;  align-items:center;  justify-content:center; }
 
 /* Section 06 */
 
@@ -460,4 +411,28 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 
 #section_06_heading > h1 {  color:white; font-family:var(--font-01); font-size:43px;}
 #section_06_heading { max-width:700px; margin-top:50px; margin-bottom:50px;}  
-  }
+}
+
+
+
+
+
+.card-image {  position:relative; height:150px; width:150px; border-radius:50%; padding:3px; background-color:#FFF;}
+.card-image .card-img { height:100%; width:100%; object-fit:cover; border-radius:50%; border:4px solid #4070F4; }
+.card { border-radius:25px; background-color:#FFF; width:320px;}
+.slide-content { margin:0 40px;}
+
+.section_04_button{ 
+  background-color:var(--bege); padding:8px 20px; border:none; font-weight:600; font-size:14px; cursor: pointer; margin:14px; transition: 1s all ease-in-out;
+  transition: background-color 0.3s ease, transform 0.2s ease; border-radius:5px; color:var(--light-blue); font-style:bold; 
+}
+.section_04_button:hover { color:white;}
+
+.image-content, .card-content{ padding:10px 14px; display:flex; flex-direction:column; align-items:center; }
+.image-content { row-gap:5px; position:relative; border-radius:25px 25px 0 25px; padding:25px 0; }
+.name { font-size:18px; font-weight:500; color:#333; }
+.description { font-size:14px; color:#707070; text-align:center; }
+.overlay { position:absolute; height:100%; width:100%; background-color:#4070F4; left:0; border-radius:25px 25px 0 25px; top:0; }
+.overlay::before , .overlay::after { position:absolute; content:''; height:40px; width:40px; background-color:#4070F4; right:0; bottom:-40px; }
+.overlay::after { border-radius: 0 25px 0 0; background-color:#FFF; }
+.slide-container { max-width:1120px; width:100%;  background-color:grey; padding:40px 0;}

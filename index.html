@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="menu.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title> Home </title>
 </head>
 
@@ -35,16 +36,16 @@
     <header>
         <div class="header">
         <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
-        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon> 
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
-                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon> 
                 <div class="nav__perfil">
                     <div class="nav__img"> </div>
                     
                     <div>
                         <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
-                        <span class="nav__profesion"> LIFE COACH </span>
+                        <span class="nav__profesion"> LIFE COACH </span> 
                     </div>
                 </div>
 
@@ -60,9 +61,9 @@
                 </div>
 
                 <div class="nav__social">
-                    <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon></a>
-                    <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"></ion-icon></a>
-                    <a href="#" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon></a>
+                    <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon> </a>
+                    <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"></ion-icon> </a>
+                    <a href="#" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon> </a>
                 </div>
             </div>
         </nav>
@@ -80,11 +81,11 @@
             </p> 
         </div>
         
-        <a href="appointments.html">
-            <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:8px;"> </ion-icon> Book Free Consultation </button> 
+        <a href="appointments.html" class="book_free_consultation">
+            <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:8px;"> </ion-icon>  Book Free Consultation </button>  
         </a>
     </article>
-</section>
+</section> 
 
 <section id="section_001">
     <div id="section_001_A">
@@ -95,83 +96,60 @@
         </div>
         
         <a href="appointments.html">
-            <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:13px;"> </ion-icon> Book Free Consultation </button> 
+            <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:13px;"> </ion-icon>  Book Free Consultation </button>  
         </a>
     </div>
 
     <div id="section_001_B"> <img src="assets/images/main-home-banner-img.png"> </div>
-</section>
+</section> 
 
 <section  id="section_04">
-    <div class="slide-container swiper">  
-        <div class="slide-content"> 
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"> </span>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"> <img src="images/img-1.jpg" alt="img" draggable="false"> </div>
+            <h2>  Blanche Pearson  </h2>  <span>  Sales Manager </span> 
+          </li>
 
-                        <div class="card-image">
-                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
-                        </div>
-                    </div>
+          <li class="card">
+            <div class="img"> <img src="images/img-2.jpg" alt="img" draggable="false"> </div>
+            <h2> Joenas Brauers </h2>  <span> Web Developer</span> 
+          </li>
 
-<<<<<<< HEAD
-                    <div class="card-content"> 
-                        <h2 class="name"> Himelsu Test </h2>
-                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="section_04_button"> View More </button>
-                    </div>
-                </div>
+          <li class="card">
+            <div class="img"> <img src="images/img-3.jpg" alt="img" draggable="false"> </div>
+            <h2> Lariach French </h2>  <span> Online Teacher</span> 
+          </li>
 
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"> </span>
+          <li class="card">
+            <div class="img"> <img src="images/img-4.jpg" alt="img" draggable="false"> </div>
+            <h2> James Khosravi </h2>  <span> Freelancer </span> 
+          </li>
 
-                        <div class="card-image">
-                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
-                        </div>
-                    </div>
+          <li class="card">
+            <div class="img"> <img src="images/img-5.jpg" alt="img" draggable="false"> </div>
+            <h2> Kristina Zasiadko </h2>  <span> Bank Manager</span> 
+          </li>
 
-                    <div class="card-content"> 
-                        <h2 class="name"> Himelsu Test </h2>
-                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="section_04_button"> View More </button>
-                    </div>
-                </div>
+          <li class="card">
+            <div class="img"> <img src="images/img-6.jpg" alt="img" draggable="false"> </div>
+            <h2> Donald Horton </h2>  <span> App Designer</span> 
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"> </i>
+      </div>
+</section> 
 
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"> </span>
-
-                        <div class="card-image">
-                            <img src="/assets/images/ig-profile-picture-min.jpg" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content"> 
-                        <h2 class="name"> Himelsu Test </h2>
-                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="section_04_button"> View More </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-
-    </div>
-</section>
-
-
-=======
->>>>>>> 5ec98902e3c4bdfbedaba0636226b2fb9a2ea295
 <section id="section_02" >
-    <h1> Get to know your <span style="font-style:italic; font-family:var(--font-02); color:#037486;"> Coach </span> on this journey </h1>
+    <h1> Get to know your <span style="font-style:italic; font-family:var(--font-02); color:#037486;"> Coach </span>  on this journey </h1>
     <article>
         <div id="section_02_heading_container"> 
             <h1> About Me </h1>
             <p> 
                 I am Lara Katerine, your dedicated guide on the path of personal transformation. At the heart of my mission is the unwavering commitment to your personal empowerment. 
             </p>
+            
             <p>
                                 I strive to guide you on a journey of self-discovery and growth, empowering you to cultivate a strong self-image, foster resilient thinking, and align your actions with your deepest 
                 values. My goal is to equip you with the tools and mindset necessary to lead a life filled with purpose, fullfilment, and balance.
@@ -179,23 +157,23 @@
             <p>
                 Driven by a bold vision, i aspire to ignite a ripple effect of positive change that transcends borders and empowers individuals worldwide. 
             </p>
-            <a href="about.html" class="wave"> <div id="articles_btn_02">  <button style="width:150px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" > Read More  </button> </div> </a>
+            <a href="about.html" class="wave"> <div id="articles_btn_02">  <button style="width:150px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" > Read More  </button>  </div> </a>
 
         </div>
         <div id="section_02_coach-sitting"> 
             <img src="assets/images/know-your-coach-boax-img.png" alt="">
         </div>
     </article>
-</section>
+</section> 
 
     <section  id="section_06">
-        <div id="section_06_heading"> <h1> Stay Updated on the <span style="font-style:italic; font-family:var(--font-02);"> Latest Tips </span> </h1> </div>
+        <div id="section_06_heading"> <h1> Stay Updated on the <span style="font-style:italic; font-family:var(--font-02);"> Latest Tips </span>  </h1> </div>
         <article>
             <div class="articles_container reveal"> 
                 <div class="articles_sub_container_A" id="article_page_01">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB ">
-                    <h2> The Transformative Journey of Life Coaching </h2>
+                    <h2>  The Transformative Journey of Life Coaching  </h2> 
                     <p> 
 
                         If you are here and aim to read this,
@@ -213,7 +191,7 @@
                 <div class="articles_sub_container_A" id="article_page_02">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB">
-                    <h2> Embracing Change with Life Coaching Techniques  </h2>
+                    <h2>  Embracing Change with Life Coaching Techniques   </h2> 
                     <p>  
 
                         Ever felt like you're stuck in a loop, unable to see beyond the same old routine? A life coach steps in like a breath of fresh air. 
@@ -228,7 +206,7 @@
                 <div class="articles_sub_container_A" id="article_page_03">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB">
-                    <h2> Understanding the Role of a Life Coach  </h2>
+                    <h2>  Understanding the Role of a Life Coach   </h2> 
                     <p>  
 
                         A great life coach is a skilled and
@@ -248,7 +226,7 @@
                 <div class="articles_sub_container_A" id="article_page_04">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB">
-                    <h2> Who Can Benefit from Life Coaching?  </h2>
+                    <h2>  Who Can Benefit from Life Coaching?   </h2> 
                     <p> 
                         Life coaching benefits many people, not
                         just those facing challenges. It's equally
@@ -268,7 +246,7 @@
                 <div class="articles_sub_container_A" id="article_page_05">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB">
-                    <h2> Common Life Coaching Requests </h2>
+                    <h2>  Common Life Coaching Requests  </h2> 
                     <p>  
                         Dreaming, of course, is great, but
                         making dreams come true is much
@@ -288,7 +266,7 @@
                 <div class="articles_sub_container_A" id="article_page_06">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
 
                 <div class="articles_sub_container_AB">
-                    <h2> Determining If You Need a Life Coach </h2>
+                    <h2>  Determining If You Need a Life Coach  </h2> 
                     <p style="margin-bottom:19px;"> 
                         Have you ever felt overwhelmed by life's
                         rapid, complex whirlwind, struggling to
@@ -303,14 +281,14 @@
             </div>
 
         </article>
-        <a href="articles.html" class="wave"> <div id="articles_btn">  <button style="width:150px;" > Access Articles  </button> </div> </a>
-    </section>
+        <a href="articles.html" class="wave"> <div id="articles_btn">  <button style="width:150px;" > Access Articles  </button>  </div> </a>
+    </section> 
 
 
     <section class="faq-container">
         <details>
         <summary>
-            <span class="faq-title"> What is Life Coaching ? </span>
+            <span class="faq-title"> What is Life Coaching ? </span> 
             <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -329,7 +307,7 @@
         <summary>
             <span class="faq-title">
                 What can I expect from a one-on-one coaching session?
-            </span>
+            </span> 
             <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -350,7 +328,7 @@
         <details>
     
         <summary>
-            <span class="faq-title"> How is life coaching different from therapy? </span>
+            <span class="faq-title"> How is life coaching different from therapy? </span> 
             <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
@@ -363,12 +341,12 @@
         </div>
         </details>
 
-    </section>
+    </section> 
 
 <footer> 
     <div id="footer_container_A">
         <h3> Book Your Free Session Today </h3> 
-        <a href="appointments.html"> <ion-icon name="arrow-forward-sharp" id="arrow_forward_sharp"> </ion-icon>  </a>
+        <a href="appointments.html" > <ion-icon name="arrow-forward-sharp" id="arrow_forward_sharp"> </ion-icon>   </a>
     </div>
     
     <div id="footer_container_C">
@@ -419,14 +397,90 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <script>
-    var swiper = new Swiper(".slide-content", {
-      slidesPerView: 2,
-      spaceBetween: 200,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+const wrapper = document.querySelector(".wrapper");
+const carousel = document.querySelector(".carousel");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const carouselChildrens = [...carousel.children];
+
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
+});
+
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    if(!isDragging) return; // if isDragging is false return from here
+    // Updates the scroll position of the carousel based on the cursor movement
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+
+const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+    }
+    // If the carousel is at the end, scroll to the beginning
+    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+    clearTimeout(timeoutId);
+    if(!wrapper.matches(":hover")) autoPlay();
+}
+
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel after every 2500 ms
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
 </script>
 
 </html>

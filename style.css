@@ -31,7 +31,7 @@ html,body { scroll-behavior:smooth; height:100vh; padding:0; background-color:va
 .reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
 .reveal.active {  transform:translateY(1px); opacity:1; }
 
-a:hover {  cursor: pointer;}
+a:hover {  cursor: pointer; }
 a { text-decoration:none; font-weight:400;  } /* 1.6rem == 16px */
 img { height:auto; width:100%; }
 .row { display:flex; justify-content: space-between; width:88%; margin:auto; align-items:center;  }
@@ -383,21 +383,21 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 
 @media screen and ( min-width:1920px ) { 
 
-  #section_01 { display:none; }
-  #section_05 { display:none; }
-  #section_01 > article { display:none; }
-  #section_05 > article { display:none; }
-  .section_01_btn { font-family:var(--font-01); font-size:18px; padding: 8px 40px; }
-  #pre-footer { display:none; }
-  .articles_container:nth-child(4) { display:flex; }
-.articles_container:nth-child(5) { display:flex; }
-.articles_container:nth-child(6) { display:flex; }
-.courses_container:nth-child(3) { display:flex; }
+#section_01 { display:none; }
+#section_05 { display:none; }
+#section_01 > article { display:none; }
+#section_05 > article { display:none; }
+.section_01_btn { font-family:var(--font-01); font-size:18px; padding: 8px 40px; }
+#pre-footer { display:none; }
+.articles_container:nth-child(4) { display:flex; }
+.articles_container:nth-child(5)   { display:flex; }
+.articles_container:nth-child(6)   { display:flex; }
+.courses_container:nth-child(3)    { display:flex; }
 
 #logo-medium-large { display:flex; }
 
 #section_logo_container {  width:390px; max-height:100px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  margin-left:70px; }
-#section_logo_container > img { position:relative; right:70px; }
+#section_logo_container > img { position:relative;  }
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
 

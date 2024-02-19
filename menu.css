@@ -74,7 +74,7 @@ img { max-width: 100%; height: auto }
 .nav__profesion { font-size: var(--small-font-size) }
 .nav__menu { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center }
 .nav__item { margin: 2.5rem 0 }
-.nav__link { color: var(--white-color); position: relative;  }
+.nav__link { color: var(--white-color); position: relative; }
 
 .nav__link::before { content: ""; position: absolute; bottom: -0.7px; left: 0; width: 0; height: 2px; background-color: #037486; transition: width 0.3s ease-in-out; }
 

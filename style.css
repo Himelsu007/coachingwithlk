@@ -38,8 +38,6 @@ img { height:auto; width:100%; }
 
 .hidden { opacity: 0; pointer-events: none; }
 
-/* Section 1 */
-
 #section_01
 { min-height:455px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-around; 
   flex-direction:row; background-image:url('/assets/images/mobile-banner-blur.png'); background-repeat:no-repeat; 

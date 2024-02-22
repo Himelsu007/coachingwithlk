@@ -42,7 +42,7 @@ img { height:auto; width:100%; }
 
 #section_01
 { min-height:455px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-around; flex-direction:row; 
-  background-image:url('/assets/images/mobile-banner-blur.png'); background-repeat:no-repeat; background-size:cover; background-position:-70px;
+  background-image:url('/assets/images/mobile-banner-blur.webp'); background-repeat:no-repeat; background-size:cover; background-position:-70px;
 }
 
 #section_01 > article { height:550px; display:flex; align-items:center;  justify-content:center; flex-direction:column; width:500px; backdrop-filter: blur(6px); background-color: #ffffff83;   }
@@ -154,13 +154,9 @@ img { height:auto; width:100%; }
 
 /* Section 07 */
 
-#section_07 { 
-  background-color: #2b4162;
-background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
-display:flex; align-items:center; justify-content:center; min-height:700px;
-}
+#section_07 { background-color: #2b4162; background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); display:flex; align-items:center; justify-content:center; min-height:700px; }
 
-#section_07 > article {  }
+#section_07 > article { border:1px solid white; width:80%; display:flex; align-items:center; justify-content:space-between;  }
 
 /* faq Container */
 

@@ -32,348 +32,316 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-        <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
-        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon> 
-        <nav class="nav" id="nav-menu">
-            <div class="nav__content bd-grid">
-                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon> 
-                <div class="nav__perfil">
-                    <div class="nav__img"> </div>
-                    
-                    <div>
-                        <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
-                        <span class="nav__profesion"> LIFE COACH </span> 
+
+    <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        </svg>
+
+        <div class="name-container">
+            <div class="logo-name"> Welcome  </div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="header">
+            <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+                    <div class="nav__perfil">
+                        <div class="nav__img"> </div>
+        
+                        <div>
+                            <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
+                            <span class="nav__profesion"> LIFE COACH </span>
+                        </div>
+                    </div>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"> <a href="index.html" class="nav__link" style="color: #037486; font-weight: bold;">  Home </a> </li>
+                            <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
+                            <li class="nav__item"> <a href="articles.html" class="nav__link">      Articles      </a> </li>
+                            <li class="nav__item"> <a href="about.html" class="nav__link">         About         </a> </li>
+                            <li class="nav__item"> <a href="coaching.html" class="nav__link">      Coaching      </a> </li>
+                        </ul>
+                    </div>
+                    <div class="nav__social">
+                        <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon> </a>
+                        <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"> </ion-icon> </a>
+                        <a href="#" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon> </a>
                     </div>
                 </div>
-
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"> <a href="index.html" class="nav__link" style="color: #037486; font-weight: bold;">  Home </a> </li>
-                        <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
-                        <li class="nav__item"> <a href="articles.html" class="nav__link">      Articles      </a> </li>
-                        <li class="nav__item"> <a href="about.html" class="nav__link">         About         </a> </li>
-                        <li class="nav__item"> <a href="coaching.html" class="nav__link">      Coaching      </a> </li>
-                    </ul>
+            </nav>
+        </div>
+        </header>
+        
+        
+        <section id="section_01">
+        <article>
+            <div id="article_container">
+                <div id="section_logo_container" style="position:relative; right:62px;"> <img id="logo-small" src="assets/icons/logotipo_principal.svg"> </div>
+                <div id="section_01_container_A"> <h1 style="font-size:24.4px;"> Design a Life in Balance </h1> </div>
+                <div id="section_01_container_B">
+                    <p> Embark on your journey of Self-Discovery with a simple message. I'm thriled to hear your story and collaborate on creating a chapter of accomplishments. <br> Let's connect and chat! </p>
                 </div>
-
-                <div class="nav__social">
-                    <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon> </a>
-                    <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"> </ion-icon> </a>
-                    <a href="#" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon> </a>
-                </div>
+        
+                <a href="appointments.html" class="book_free_consultation">
+                    <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:8px;"> </ion-icon> Book Free Consultation </button>
+                </a>
             </div>
-        </nav>
-    </div>
-    </header>
-
-<section id="section_01">
-    <article>
-        <div id="article_container">
-            <div id="section_logo_container" style="position:relative; right:62px;"> <img id="logo-small" src="assets/icons/logotipo_principal.svg"> </div>
-            <div id="section_01_container_A"> <h1 style="font-size:24.4px;"> Design a Life in Balance </h1> </div>
-            <div id="section_01_container_B">
+        </article>
+        </section> 
+        
+        <section id="section_001">
+        <div id="section_001_A">
+            <div id="section_logo_container"> <img id="logo-medium-large" src="assets/icons/logo-principal-medium.png"> <img id="logo-small" src="assets/icons/logotipo_principal.svg" style="display:none;">  </div>
+            <div id="section_001_container_A"> <h1> Design a Life in Balance </h1> </div>
+            <div id="section_001_container_B">
                 <p> Embark on your journey of Self-Discovery with a simple message. I'm thriled to hear your story and collaborate on creating a chapter of accomplishments. <br> Let's connect and chat! </p>
             </div>
-            
-            <a href="appointments.html" class="book_free_consultation"> 
-                <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:8px;"> </ion-icon> Book Free Consultation </button>
+        
+            <a href="appointments.html">
+                <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:13px;"> </ion-icon>  Book Free Consultation </button>
             </a>
         </div>
-    </article>
-</section> 
-
-<section id="section_001">
-    <div id="section_001_A">
-        <div id="section_logo_container"> <img id="logo-medium-large" src="assets/icons/logo-principal-medium.png"> <img id="logo-small" src="assets/icons/logotipo_principal.svg" style="display:none;">  </div>
-        <div id="section_001_container_A"> <h1> Design a Life in Balance </h1> </div>
-        <div id="section_001_container_B"> 
-            <p> Embark on your journey of Self-Discovery with a simple message. I'm thriled to hear your story and collaborate on creating a chapter of accomplishments. <br> Let's connect and chat! </p> 
-        </div>
+        <div id="section_001_B"> <img src="assets/images/main-home-banner-img.png"> </div>
+        </section> 
         
-        <a href="appointments.html">
-            <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:13px;"> </ion-icon>  Book Free Consultation </button>
-        </a>
-    </div>
-
-    <div id="section_001_B"> <img src="assets/images/main-home-banner-img.png"> </div>
-</section> 
-
-<section  id="section_04">
-
-    <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card">
-            <div class="img"> <img src=" " alt="img" draggable="false"> </div>
-            <h2>  Blanche Pearson  </h2>  <span>  Sales Manager </span> 
-          </li>
-
-          <li class="card">
-            <div class="img"> <img src=" " alt="img" draggable="false"> </div>
-            <h2> Joenas Brauers </h2>  <span> Web Developer</span> 
-          </li>
-
-          <li class="card">
-            <div class="img"> <img src=" " alt="img" draggable="false"> </div>
-            <h2> Lariach French </h2>  <span> Online Teacher</span> 
-          </li>
-
-          <li class="card">
-            <div class="img"> <img src=" " alt="img" draggable="false"> </div>
-            <h2> James Khosravi </h2>  <span> Freelancer </span> 
-          </li>
-
-          <li class="card">
-            <div class="img"> <img src=" " alt="img" draggable="false"> </div>
-            <h2> Kristina Zasiadko </h2>  <span> Bank Manager </span> 
-          </li>
-
-          <li class="card">
-            <div class="img"> <img src="" alt="img" draggable="false"> </div>
-            <h2> Donald Horton </h2>  <span> App Designer</span> 
-          </li>
-        </ul>
-        <i id="right" class="fa-solid fa-angle-right"> </i>
-      </div>
-</section> 
-
-<section id="section_02">
-    <h1> Get to know your <span style="font-style:italic; font-family:var(--font-02); color:#037486;"> Coach </span>  on this journey </h1>
-    <article>
-        <div id="section_02_heading_container"> 
-            <h1> About Me </h1>
-            <p> 
-                I am Lara Katerine, your dedicated guide on the path of personal transformation. At the heart of my mission is the unwavering commitment to your personal empowerment. 
-            </p>
-            
-            <p>
-                I strive to guide you on a journey of self-discovery and growth, empowering you to cultivate a strong self-image, foster resilient thinking, and align your actions with your deepest 
-                values. My goal is to equip you with the tools and mindset necessary to lead a life filled with purpose, fullfilment, and balance.
-            </p>
-            <p>
-                Driven by a bold vision, i aspire to ignite a ripple effect of positive change that transcends borders and empowers individuals worldwide. 
-            </p>
-            <a href="about.html" class="wave"> <div id="articles_btn_02">  <button style="width:150px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" > Read More  </button>  </div> </a>
-
-        </div>
-        <div id="section_02_coach-sitting"> 
-            <img src="assets/images/know-your-coach-boax-img.webp" alt="">
-        </div>
-    </article>
-</section> 
-
-<section id="section_07">
-    <article>
-        <img src="assets/images/appointment_phone_mockup.webp" style="width:310px; height:auto;">
+        <section  id="section_04">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="card">
+                <div class="img"> <img src=" " alt="img" draggable="false"> </div>
+                <h2>  Blanche Pearson  </h2>  <span>  Sales Manager </span>
+              </li>
+              <li class="card">
+                <div class="img"> <img src=" " alt="img" draggable="false"> </div>
+                <h2> Joenas Brauers </h2>  <span> Web Developer</span>
+              </li>
+              <li class="card">
+                <div class="img"> <img src=" " alt="img" draggable="false"> </div>
+                <h2> Lariach French </h2>  <span> Online Teacher</span>
+              </li>
+              <li class="card">
+                <div class="img"> <img src=" " alt="img" draggable="false"> </div>
+                <h2> James Khosravi </h2>  <span> Freelancer </span>
+              </li>
+              <li class="card">
+                <div class="img"> <img src=" " alt="img" draggable="false"> </div>
+                <h2> Kristina Zasiadko </h2>  <span> Bank Manager </span>
+              </li>
+              <li class="card">
+                <div class="img"> <img src="" alt="img" draggable="false"> </div>
+                <h2> Donald Horton </h2>  <span> App Designer</span>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"> </i>
+          </div>
+        </section> 
         
-    </article>
-</section>
-
-    <section  id="section_06">
-        <div id="section_06_heading"> <h1> Stay Updated on the <span style="font-style:italic; font-family:var(--font-02);"> Latest Tips </span>  </h1> </div>
+        <section id="section_02">
+        <h1> Get to know your <span style="font-style:italic; font-family:var(--font-02); color:#037486;"> Coach </span>  on this journey </h1>
         <article>
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_01">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB ">
-                    <h2>  The Transformative Journey of Life Coaching  </h2> 
-                    <p> 
-                        If you are here and aim to read this,
-                        then you are looking for a way to
-                        transform yourself. So let's explore the
-                        essence of life coaching together.
-                    </p>
-                    <a href="article_01.html"> Continue Reading >> </a>
-                </div> 
-
-                <div class="articles_sub_container_B"> <h4> 09 ∙ 10 ∙ 2022</h4> </div>
-            </div>
-
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_02">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB">
-                    <h2>  Embracing Change with Life Coaching Techniques   </h2> 
-                    <p>  
-
-                        Ever felt like you're stuck in a loop, unable to see beyond the same old routine? A life coach steps in like a breath of fresh air. 
-                    </p>
-                    <a href="article_02.html"> Continue Reading >></a>
-                </div>
-
-                <div class="articles_sub_container_B"> <h4> 09 ∙ 10 ∙ 2023 </h4> </div>
-            </div>
-
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_03">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB">
-                    <h2>  Understanding the Role of a Life Coach   </h2> 
-                    <p>  
-
-                        A great life coach is a skilled and
-                        passionate individual dedicated to
-                        helping others reach their full potential.
-                        Many believe that being "busy" or just
-                        getting things done shows they live life
-                        to the fullest.
-                    </p>
-                    <a href="article_03.html"> Continue Reading >></a>
-                </div>
-
-                <div class="articles_sub_container_B"> <h4> 10 ∙ 16 ∙ 2023 </h4> </div>
-            </div>
-
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_04">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB">
-                    <h2>  Who Can Benefit from Life Coaching?   </h2> 
-                    <p> 
-                        Life coaching benefits many people, not
-                        just those facing challenges. It's equally
-                        valuable for successful individuals
-                        seeking growth and is accessible to
-                        people of all income levels, not only for
-                        the wealthy. Life coaching addresses
-                        serious problems and the personal
-                        growth of professionals, entrepenuers ... </p>
-                    <a href="article_04.html"> Continue Reading >></a>
-                </div>
-
-                <div class="articles_sub_container_B"> <h4> 11 ∙ 07 ∙ 2023 </h4> </div>
-            </div>
-
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_05">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB">
-                    <h2>  Common Life Coaching Requests  </h2> 
-                    <p>  
-                        Dreaming, of course, is great, but
-                        making dreams come true is much
-                        better. “What can you do today to
-                        become closer to your dream
-                        tomorrow?” Here, for example, are some
-                        of the queries you can address to a life
-                        coach:             
-                    </p>
-                    <a href="article_05.html"> Continue Reading >></a>
-                </div>
-
-                <div class="articles_sub_container_B"> <h4> 11 ∙ 12 ∙ 2023 </h4> </div>
-            </div>
-
-            <div class="articles_container reveal"> 
-                <div class="articles_sub_container_A" id="article_page_06">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
-
-                <div class="articles_sub_container_AB">
-                    <h2>  Determining If You Need a Life Coach  </h2> 
-                    <p style="margin-bottom:19px;"> 
-                        Have you ever felt overwhelmed by life's
-                        rapid, complex whirlwind, struggling to
-                        make sense of the chaos despite
-                        believing you've uncovered the ultimate
-                        secret to happiness?
-                    </p>
-                    <a href="#section_06"> Continue Reading >></a>
-                </div>
-
-                <div class="articles_sub_container_B"> <h4> 12 ∙ 24 ∙ 2023 </h4> </div>
-            </div>
-
-        </article>
-        <a href="articles.html" class="wave"> <div id="articles_btn">  <button style="width:150px;" > Access Articles  </button>  </div> </a>
-    </section> 
-
-    <section class="faq-container">
-        <details>
-        <summary>
-            <span class="faq-title"> What is Life Coaching ? </span> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
-            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M9 6l6 6l-6 6"></path>
-            </svg>
-        </summary>
-    
-        <div class="faq-content">
-            Life coaching is a professional service that helps individuals clarify their goals, overcome obstacles, and make positive changes in various aspects of their lives. <br> <br>
-            Life coaches work with clients to identify their strengths, values, and aspirations, providing support and guidance to facilitate personal and professional development. <br> <br>
-            The focus is often on setting and achieving specific goals, enhancing overall well-being, and navigating life transitions. Unlike therapy, which may delve into past experiences, life coaching is typically future-oriented, aiming to empower clients to maximize their potential and create a more fulfilling life.
-        </div>
-        </details>
-    
-        <details>
-        <summary>
-            <span class="faq-title">
-                What can I expect from a one-on-one coaching session?
-            </span> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
-            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M9 6l6 6l-6 6"></path>
-            </svg>
-        </summary>
-    
-        <div class="faq-content">
-            Personalization: The coaching sessions are customized to address the unique circumstances and objectives of the individual client.
-            Confidentiality: The nature of one-on-one coaching allows for open and confidential discussions, creating a safe space for the client to explore personal and professional matters.  <br> <br>
-            Individual Attention: The coach dedicates their attention solely to the needs of the client during each session, fostering a deep understanding of the client's situation.  <br>  <br>
-            Goal Setting: The coaching process often involves collaboratively setting and working towards specific, measurable, and achievable goals. <br>  <br>
-            Accountability: The coach helps the client stay accountable for their actions, commitments, and progress toward their objectives. <br>  <br>
-            Feedback and Reflection: One-on-One coaching provides a platform for receiving constructive feedback and engaging in reflective conversations to promote personal growth. <br> <br>
-            <mark>This format of coaching is beneficial for individuals seeking highly personalized and targeted support in areas such as career development, personal growth, leadership skills, and life transitions.</mark>
-        </div>
-        </details>
-        <details>
-    
-        <summary>
-            <span class="faq-title"> How is life coaching different from therapy? </span> 
-            <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
-            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
-            <path d="M9 6l6 6l-6 6"> </path>
-            </svg>
-        </summary>
-    
-        <div class="faq-content">
-            While therapy often delves into past experiences and emotions, life coaching is future-oriented, focusing on setting and achieving specific goals. Life coaching is action-oriented and aims to help individuals maximize their potential and create a more fulfilling life in the present and future.
-        </div>
-        </details>
-        <img src="assets/images/newsletter.png" style="width:1400px; height:auto; margin-left: 10%; margin-top:10%;">
-
+            <div id="section_02_heading_container">
+                <h1> About Me </h1>
+                <p>
+                    I am Lara Katerine, your dedicated guide on the path of personal transformation. At the heart of my mission is the unwavering commitment to your personal empowerment.
+                </p>
         
-    </section> 
-
-<footer> 
-</footer>
+                <p>
+                    I strive to guide you on a journey of self-discovery and growth, empowering you to cultivate a strong self-image, foster resilient thinking, and align your actions with your deepest
+                    values. My goal is to equip you with the tools and mindset necessary to lead a life filled with purpose, fullfilment, and balance.
+                </p>
+                <p>
+                    Driven by a bold vision, i aspire to ignite a ripple effect of positive change that transcends borders and empowers individuals worldwide.
+                </p>
+                <a href="about.html" class="wave"> <div id="articles_btn_02">  <button style="width:150px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" > Read More  </button>  </div> </a>
+            </div>
+            <div id="section_02_coach-sitting">
+                <img src="assets/images/know-your-coach-boax-img.webp" alt="">
+            </div>
+        </article>
+        </section> 
+        
+        <section id="section_07">
+        <article>
+            <img src="assets/images/appointment_phone_mockup.webp" style="width:310px; height:auto;">
+        
+        </article>
+        </section>
+        <section  id="section_06">
+            <div id="section_06_heading"> <h1> Stay Updated on the <span style="font-style:italic; font-family:var(--font-02);"> Latest Tips </span>  </h1> </div>
+            <article>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_01">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB ">
+                        <h2>  The Transformative Journey of Life Coaching  </h2>
+                        <p>
+                            If you are here and aim to read this,
+                            then you are looking for a way to
+                            transform yourself. So let's explore the
+                            essence of life coaching together.
+                        </p>
+                        <a href="article_01.html"> Continue Reading >> </a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 09 ∙ 10 ∙ 2022</h4> </div>
+                </div>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_02">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB">
+                        <h2>  Embracing Change with Life Coaching Techniques   </h2>
+                        <p>
+                            Ever felt like you're stuck in a loop, unable to see beyond the same old routine? A life coach steps in like a breath of fresh air.
+                        </p>
+                        <a href="article_02.html"> Continue Reading >></a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 09 ∙ 10 ∙ 2023 </h4> </div>
+                </div>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_03">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB">
+                        <h2>  Understanding the Role of a Life Coach   </h2>
+                        <p>
+                            A great life coach is a skilled and
+                            passionate individual dedicated to
+                            helping others reach their full potential.
+                            Many believe that being "busy" or just
+                            getting things done shows they live life
+                            to the fullest.
+                        </p>
+                        <a href="article_03.html"> Continue Reading >></a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 10 ∙ 16 ∙ 2023 </h4> </div>
+                </div>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_04">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB">
+                        <h2>  Who Can Benefit from Life Coaching?   </h2>
+                        <p>
+                            Life coaching benefits many people, not
+                            just those facing challenges. It's equally
+                            valuable for successful individuals
+                            seeking growth and is accessible to
+                            people of all income levels, not only for
+                            the wealthy. Life coaching addresses
+                            serious problems and the personal
+                            growth of professionals, entrepenuers ... </p>
+                        <a href="article_04.html"> Continue Reading >></a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 11 ∙ 07 ∙ 2023 </h4> </div>
+                </div>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_05">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB">
+                        <h2>  Common Life Coaching Requests  </h2>
+                        <p>
+                            Dreaming, of course, is great, but
+                            making dreams come true is much
+                            better. “What can you do today to
+                            become closer to your dream
+                            tomorrow?” Here, for example, are some
+                            of the queries you can address to a life
+                            coach:
+                        </p>
+                        <a href="article_05.html"> Continue Reading >></a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 11 ∙ 12 ∙ 2023 </h4> </div>
+                </div>
+                <div class="articles_container reveal">
+                    <div class="articles_sub_container_A" id="article_page_06">  <div class="articles_mini_indicator"> <h3> Article </h3> </div>  </div>
+                    <div class="articles_sub_container_AB">
+                        <h2>  Determining If You Need a Life Coach  </h2>
+                        <p style="margin-bottom:19px;">
+                            Have you ever felt overwhelmed by life's
+                            rapid, complex whirlwind, struggling to
+                            make sense of the chaos despite
+                            believing you've uncovered the ultimate
+                            secret to happiness?
+                        </p>
+                        <a href="#section_06"> Continue Reading >></a>
+                    </div>
+                    <div class="articles_sub_container_B"> <h4> 12 ∙ 24 ∙ 2023 </h4> </div>
+                </div>
+            </article>
+            <a href="articles.html" class="wave"> <div id="articles_btn">  <button style="width:150px;" > Access Articles  </button>  </div> </a>
+        </section>
+        <section class="faq-container">
+            <details>
+            <summary>
+                <span class="faq-title"> What is Life Coaching ? </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+            </summary>
+        
+            <div class="faq-content">
+                Life coaching is a professional service that helps individuals clarify their goals, overcome obstacles, and make positive changes in various aspects of their lives. <br> <br>
+                Life coaches work with clients to identify their strengths, values, and aspirations, providing support and guidance to facilitate personal and professional development. <br> <br>
+                The focus is often on setting and achieving specific goals, enhancing overall well-being, and navigating life transitions. Unlike therapy, which may delve into past experiences, life coaching is typically future-oriented, aiming to empower clients to maximize their potential and create a more fulfilling life.
+            </div>
+            </details>
+        
+            <details>
+            <summary>
+                <span class="faq-title">
+                    What can I expect from a one-on-one coaching session?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+            </summary>
+        
+            <div class="faq-content">
+                Personalization: The coaching sessions are customized to address the unique circumstances and objectives of the individual client.
+                Confidentiality: The nature of one-on-one coaching allows for open and confidential discussions, creating a safe space for the client to explore personal and professional matters.  <br> <br>
+                Individual Attention: The coach dedicates their attention solely to the needs of the client during each session, fostering a deep understanding of the client's situation.  <br>  <br>
+                Goal Setting: The coaching process often involves collaboratively setting and working towards specific, measurable, and achievable goals. <br>  <br>
+                Accountability: The coach helps the client stay accountable for their actions, commitments, and progress toward their objectives. <br>  <br>
+                Feedback and Reflection: One-on-One coaching provides a platform for receiving constructive feedback and engaging in reflective conversations to promote personal growth. <br> <br>
+                <mark>This format of coaching is beneficial for individuals seeking highly personalized and targeted support in areas such as career development, personal growth, leadership skills, and life transitions.</mark>
+            </div>
+            </details>
+            <details>
+        
+            <summary>
+                <span class="faq-title"> How is life coaching different from therapy? </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+                <path d="M9 6l6 6l-6 6"> </path>
+                </svg>
+            </summary>
+        
+            <div class="faq-content">
+                While therapy often delves into past experiences and emotions, life coaching is future-oriented, focusing on setting and achieving specific goals. Life coaching is action-oriented and aims to help individuals maximize their potential and create a more fulfilling life in the present and future.
+            </div>
+            </details>
+            <img src="assets/images/newsletter.png" style="width:1400px; height:auto; margin-left: 10%; margin-top:10%;">
+        
+        </section> 
+        
+        <footer> 
+        </footer>
+    </div>
 
 </body>
 
 <script src="javascript/reveal_animation.js"></script>
+<script src="javascript/carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"  integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="javascript/menu_hide_appear_function.js"></script>
 <script src="javascript/know_more.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="javascript/footer_year_auto_update.js"></script>
-<script>
-    function getCookie(name) {
-    const cookies = document.cookie.split('; ');
-    for (const cookie of cookies) {
-        const [cookieName, cookieValue] = cookie.split('=');
-        if (cookieName === name) {
-            return cookieValue;
-        }
-    }
-    return null;
-}
 
-const username = getCookie('username');
-
-</script>
 <script defer>
 const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 const buttons = document.querySelectorAll("button");
@@ -388,7 +356,6 @@ buttons.forEach(button => {
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     const containers = document.querySelectorAll('.articles_container');
-
     containers.forEach(container => {
         container.addEventListener('click', function (event) {
             const clickedContainer = event.target.closest('.articles_sub_container_AB');
@@ -406,93 +373,33 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <script>
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
-const carouselChildrens = [...carousel.children];
+    gsap.fromTo(
+  ".loading-page",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    display: "none",
+    duration: 1.5,
+    delay: 3.5,
+  }
+);
 
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+gsap.fromTo(
+  ".logo-name",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.5,
+  }
+);
 
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-});
-
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-});
-
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
-
-arrowBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-    });
-});
-
-const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
-}
-
-const dragging = (e) => {
-    if(!isDragging) return;
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-}
-
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove("dragging");
-}
-
-const infiniteScroll = () => {
-    if(carousel.scrollLeft === 0) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        carousel.classList.remove("no-transition");
-    }
-    
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.offsetWidth;
-        carousel.classList.remove("no-transition");
-    }
-
-    
-    clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
-}
-
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return;
-    
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
-
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
-</script>
-
-<script>
-    // Check if the browser supports the history API
-if (window.history && window.history.navigationMode) {
-    // If supported, reset the navigation mode to 'compatible'
-    window.history.navigationMode = 'compatible';
-}
 
 </script>
-
 </html>
 
 

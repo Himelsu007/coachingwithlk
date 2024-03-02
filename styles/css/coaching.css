@@ -26,9 +26,25 @@
 
 }
 
+@font-face {
+    font-family: 'Ott';
+    src: url('') format('woff2'),  
+    url('') format('woff');   
+}
 
 html { scroll-behavior:smooth; }
-body {  height:100dvh; padding:0; background-color:var(--bege);}
+body {  
+    height:100dvh; padding:0;     
+    background: linear-gradient(270deg, #037486bc, #dbdbdb, #ffffff, #f5edea);     
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 40s ease infinite;
+    -moz-animation: AnimationName 40s ease infinite;
+    -o-animation: AnimationName 40s ease infinite;
+    animation: AnimationName 40s ease infinite;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
 .reveal.active {  transform:translateY(1px); opacity:1; }
@@ -39,8 +55,8 @@ img { height:auto; width:100%; }
 .row { display:flex; justify-content: space-between; width:88%; margin:auto; align-items:center;  }
 
 .hidden { opacity: 0; pointer-events: none; }
-  
-#section_01 {  min-height:195px; background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 93, 114, 1) 0%, rgb(1, 69, 80) 0%, rgba(2, 134, 156, 1) 100%, rgb(2, 144, 173) 100%);  display:flex; align-items:center; justify-content:space-between; border:1px  rgb(255, 0, 0); padding:10px; }
+
+#section_01 {  min-height:195px;   display:flex; align-items:center; justify-content:space-between; border:1px  rgb(255, 0, 0); padding:10px; }
 
 #section_01 > article {  min-height:190px; display:flex; align-items:center;  justify-content:space-between; flex-direction:column; width:100%; max-height:1200px; padding:10px; }
 #section_01_container_A { min-height:110px; min-width:280px; display:flex; gap:10px; flex-direction:column; margin-top:20px;  align-items:center; justify-content:space-between;}
@@ -69,8 +85,8 @@ button:hover::before, button:focus::before { width: 150%; height: 150%; opacity:
 /* Animations  */
 
 .loader_pg {
-  width: 48px; height: 48px; border-radius: 50%; display: inline-block; border-top: 3px  #000000;
-  border-right: 3px  transparent; box-sizing: border-box; animation: rotation 1s linear infinite;
+width: 48px; height: 48px; border-radius: 50%; display: inline-block; border-top: 3px  #000000;
+border-right: 3px  transparent; box-sizing: border-box; animation: rotation 1s linear infinite;
 }
 
 .loader_overlay {
@@ -79,8 +95,8 @@ button:hover::before, button:focus::before { width: 150%; height: 150%; opacity:
 }
 
 @keyframes rotation {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 } 
 
 #player_style { width:280px; }
@@ -223,3 +239,28 @@ footer { max-height:110px; display:flex; flex-direction:column; align-items:cent
     color: black;
     padding: 0 2rem;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+#section_02 {  min-height:195px; background:url('/assets/images/circular_effect.png');  display:flex; align-items:center; justify-content:space-between; border:1px  rgb(255, 0, 0); padding:10px; }
+
+#section_02 > article {  min-height:190px; display:flex; align-items:center;  justify-content:space-between; flex-direction:column; width:100%; max-height:1200px; padding:10px; }

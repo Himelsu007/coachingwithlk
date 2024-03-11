@@ -32,18 +32,14 @@
 
 
 html,body { scroll-behavior:smooth; height:100vh; padding:0; background-color:var(--bege); margin:0;  }
-body::-webkit-scrollbar {
-  display: none;
-}
+body::-webkit-scrollbar { display: none; }
 
 .reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
 .reveal.active {  transform:translateY(1px); opacity:1; }
-
 a:hover {  cursor: pointer; }
 a { text-decoration:none; font-weight:400;  } 
 img { height:auto; width:100%; }
 .row { display:flex; justify-content: space-between; width:88%; margin:auto; align-items:center;  }
-
 .hidden { opacity: 0; pointer-events: none; }
 
 /* Section 1 */
@@ -69,9 +65,7 @@ img { height:auto; width:100%; }
 }
 
 #puta { display:flex; flex-direction:row; align-items:center; justify-content:space-between; }
-
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
-
 #section_001 { display:none;  }
 #section_001 > article { display:none; }
 

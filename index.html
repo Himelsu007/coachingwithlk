@@ -141,9 +141,9 @@
                 claim your FREE workbook and begin your transformational journey towards managing stress and anxiety effectively. 
             </p>
             <div id="workbook_container">
-                <img src="assets/images/workbook_sample_2.png" alt="workbook" style="width:380px; height:auto;"> 
             </div>
-                <form id="download_form" method="post" action="send_email.php">
+                <form id="download_form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                     <button id="download_form button " type="submit"> Download My Free Workbook </button> 
@@ -152,9 +152,11 @@
         </div>
         </article>
 
-        
         <article id="section_05_article_02">
-            <img src="assets/images/workbook_sample_2.png" alt="workbook" style="width:880px; height:auto;"> 
+            <div id="slider">
+                <img src="assets/images/workbook_fversion.svg" alt="workbook" class="active">
+                <img src="assets/images/workbook_ipad.svg" alt="workbook">
+              </div>
         </article>
     </section>
 
@@ -436,7 +438,23 @@ buttons.forEach(button => {
 
 </script>
 
-
+<script>
+    const images = [
+      "assets/images/workbook_fversion.svg",
+      "assets/images/workbook_ipad.svg"
+    ];
+    let currentImageIndex = 0;
+    const slider = document.getElementById('slider');
+    const sliderImages = slider.querySelectorAll('img');
+    sliderImages[currentImageIndex].classList.add('active');
+    function showNextImage() {
+      sliderImages[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      sliderImages[currentImageIndex].classList.add('active');
+    }
+    
+    setInterval(showNextImage, 8000);
+  </script>
 </html>
 
 

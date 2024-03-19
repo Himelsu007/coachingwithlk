@@ -105,13 +105,32 @@ img { height:auto; width:100%; }
 
 /* Section 05 */
 
-#section_05 { display:flex; align-items:center; justify-content:center; height:920px; background-color:var(--white); padding:5px; flex-wrap:wrap; flex-direction:row; gap:20px;}
+#section_05 { display:flex; align-items:center; justify-content:center; height:920px; background-color:var(--white); padding:5px; flex-wrap:wrap; flex-direction:row;}
 #section_05 > #section_05_article_01 {  height:760px; width:40%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;}
 #section_05 > #section_05_article_02 { display:none;}
 
 #section_05 > article > h1 {  }
 #section_05 > article > p  { text-align:justify; padding:10px; } 
 #workbook_container { display:flex; align-items:center; justify-content:space-between; flex-direction:column;   }
+#slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border:1px solid black;
+}
+
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slider img.active {
+  opacity: 1;
+}
 
 #section_05_article_01  a button {    
   background-color: #037486; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor:pointer;
@@ -399,8 +418,10 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
 
-#section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; background-color: #ebe6e4;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ebe6e4 9px ), repeating-linear-gradient( #c5c1c155, #c5c1c1 ); }
+#section_001 { display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; background-color: #c5c1c1;
+  opacity: 1;
+  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 );
+  background-size: 3px 100%; }
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
 
 #section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; max-height:190px;  margin-top:20px; margin-bottom:10px;}
@@ -426,8 +447,10 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 
 #section_06_heading > h1 {  color:rgba(255, 255, 255, 0.876); font-family:var(--font-01); font-size:43px;}
 #section_06_heading { max-width:700px; margin-top:50px; margin-bottom:50px;}   }
-#section_05 > #section_05_article_01 {  height:760px; width:45%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;}
-#section_05 > #section_05_article_02 {  height:760px; width:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;}
+#section_05 { display:flex; align-items:center; justify-content:center; height:1220px; background-color:var(--white); padding:5px; flex-wrap:wrap; flex-direction:row; gap:20px; }
+
+#section_05 > #section_05_article_01 {  max-height:1260px; width:45%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; border:1px solid black;}
+#section_05 > #section_05_article_02 {  height:760px; width:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; border:1px solid black;}
 
 .wrapper { max-width: 1100px; width: 100%; position: relative; }
 

@@ -135,15 +135,16 @@
             <h1 style="position:absolute; bottom:10px; left:400px;"> Your Guide to Overcoming Stress and Anxiety </h1>
 
             <div id="workbook_container">
-            <dotlottie-player src="https://lottie.host/2dfea135-834d-437a-a11f-e8946331e294/8IRK7frvX8.json" background="transparent" speed="0.8" style="width: 440px; height: 440px; " loop autoplay></dotlottie-player>
+                <img src="assets/images/workbook_fversion.svg" alt="workbook" class="active">
 
             </div>
-                <form id="download_form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <button id="download_form button " type="submit"><span style="font-weight:bold; color:azure;"> Download Your Free Workbook Now </span></button> 
-                </form>
+            <form id="download_form" action="https://api.web3forms.com/submit" method="POST" target="hidden_iframe">
+                <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <button id="download_button" type="submit"><span style="font-weight:bold; color:azure;"> Download Your Free Workbook Now </span></button> 
+            </form>
+                <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
 
         <div id="section_01_container_F"> 
         </div>
@@ -151,8 +152,6 @@
 
         <article id="section_05_article_02">
             <div id="slider">
-                <img src="assets/images/workbook_fversion.svg" alt="workbook" class="active">
-                <img src="assets/images/workbook_ipad.svg" alt="workbook">
               </div>
         </article>
     </section>
@@ -432,24 +431,27 @@ buttons.forEach(button => {
 });
 
 </script>
-
 <script>
-    const images = [
-      "assets/images/workbook_fversion.svg",
-      "assets/images/workbook_ipad.svg"
-    ];
-    let currentImageIndex = 0;
-    const slider = document.getElementById('slider');
-    const sliderImages = slider.querySelectorAll('img');
-    sliderImages[currentImageIndex].classList.add('active');
-    function showNextImage() {
-      sliderImages[currentImageIndex].classList.remove('active');
-      currentImageIndex = (currentImageIndex + 1) % images.length;
-      sliderImages[currentImageIndex].classList.add('active');
+    // Function to handle form submission
+    function handleFormSubmit() {
+        // Redirect to articles.html
+        window.location.href = 'articles.html';
     }
-    
-    setInterval(showNextImage, 8000);
-  </script>
+
+    // Event listener to detect when the form is submitted
+    document.getElementById('download_form').addEventListener('submit', function(event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Submit the form to the API link using the hidden iframe
+        document.getElementById('download_form').target = 'hidden_iframe';
+        document.getElementById('download_form').submit();
+
+        // After form is submitted, handle the redirection
+        handleFormSubmit();
+    });
+</script>
+
 </html>
 
 

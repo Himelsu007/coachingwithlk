@@ -38,7 +38,7 @@ a { text-decoration:none; font-weight:400;  } /* 1.6rem == 16px */
 img { height:auto; width:100%; }
 
 #section_01 { border:3px solid red; display:flex; flex-direction:row; flex-wrap:wrap; padding:5px; align-content:center; justify-content:center; }
-#section_01 > article:nth-child(1) { border:1px solid black; height:650px; width:100%; background-color:#037486; display:flex; align-items:center; justify-content:center; }
+#section_01 > article:nth-child(1) { border:1px solid black; height:650px; width:100%; /* background-color:#037486;*/ display:flex; align-items:center; justify-content:center; } 
 #photo_container_001 { border:1px solid black; border-radius:30px; height:400px; width:300px; }
 #section_01 > article:nth-child(2) { border:1px solid black; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:space-evenly;  }
 #section_01_article_02_container_A { border:1px solid black; height:70px; min-width:360px; display:flex; align-items:center; justify-content:center; }
@@ -51,14 +51,16 @@ img { height:auto; width:100%; }
 #section_02_article_01_container_B { border:1px solid rgb(50, 47, 255); display:flex; align-items:center; justify-content:center; gap:30px; width:350px;  flex-wrap:wrap; }
 
 #section_02 > article:nth-child(2) { border:1px solid black; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:space-evenly;  }
-.value_containers { border-radius:30px; width:220px; height:240px; border:3px solid black; }
+.value_containers { border-radius:40px; width:280px; height:340px; border:3px solid black; display:flex; flex-direction:column;
+align-items:center; justify-content:space-evenly; }
+.value_containers > p { text-align:center; }
 
 #section_02_article_01_container_C { border:2px solid rgb(255, 7, 27); display:flex; align-items:center; justify-content:flex-start; gap:30px; height:900px; width:100%;  flex-wrap:wrap; }
 #photo_container { border:3px solid black; display:flex; height:410px; width:300px; border-radius:30px;  }
 #coach_info_container { border:1px solid black; display:flex; width:100%; height:400px; display:flex; align-items:center; justify-content:flex-start; flex-direction:column; }
-#h3_coach_container { border:1px solid black; height:60px; width:100%; }
-#h1_coach_container { border:1px solid black; height:60px; width:100%; }
-#p_coach_container  { border:1px solid black; height:auto; width:100%; }
+#h3_coach_container { border:1px solid black; height:60px; width:100%; display:flex; align-items:center; justify-content:center; }
+#h1_coach_container { border:1px solid black; height:60px; width:100%; display:flex; align-items:center; justify-content:center; }
+#p_coach_container  { border:1px solid black; height:auto; width:100%; display:flex; align-items:center; justify-content:center; }
 
 
 .type--A { --line_color: #555555; --back_color:#00a560; }

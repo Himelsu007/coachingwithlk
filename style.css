@@ -91,7 +91,7 @@ img { height:auto; width:100%; }
 #newsletter_section { 
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 93, 114, 1) 0%, rgb(1, 69, 80) 0%, rgba(2, 134, 156, 1) 100%, rgb(2, 144, 173) 100%); 
   display:flex; align-items:center; justify-content:center; position:relative; bottom:2px; border:1px solid rgb(185, 33, 33); padding:20px;
- }
+}
 
 #newsletter_section > article { 
   width:1170px; height:358px; border-radius:30px; background-image:url('assets/images/test.png'); background-repeat:no-repeat; background-size:cover; display:flex; align-items:center; justify-content:center;
@@ -109,7 +109,7 @@ img { height:auto; width:100%; }
 
 #section_05 { display:flex; align-items:center; justify-content:center; background-color:var(--white);  flex-wrap:wrap; flex-direction:row;  padding:5px; margin:auto; gap:30px;  }
 #section_05 > #section_05_article_01 {  max-width:600px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:10px; border:1px solid black;  }
-#section_05 > #section_05_article_02 {  max-width:670px; display:flex;  align-items:center; justify-content:center; border:1px solid black; }
+#section_05 > #section_05_article_02 {  max-width:670px; display:flex;  align-items:center; justify-content:center; border:1px solid black;  }
 #section_05_article_01 > h1 { font-family:var(--font-02); font-style:normal; font-size:30px; font-weight:700; color:#212121c2; text-align:center;}
 #section_05 > article > p  { text-align:justify; padding:16px; font-size:17.6px; font-family:sans-serif; font-weight:400; font-kerning:auto; color:#212121; } 
 #section_05_article_01 > h5 { font-family:Arial, Helvetica, sans-serif; font-style:normal; font-size:13.8px; font-weight:400; color: rgb(46, 46, 46); text-align:center; padding:5px;}
@@ -362,7 +362,8 @@ label { display:none;}
 .section_01_btn { font-family:var(--font-01); font-size:18px; padding: 15px 30px;font-weight:bold; }
 .courses_container:nth-child(3) { display:none; }
 .articles_container:nth-child(4) { display:flex; }
-#section_001 { min-height:300px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px; padding-left:20px;  }
+#section_001 { min-height:300px; background-color: #c5c1c1;
+  opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px; padding-left:20px;  }
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
 #section_logo_container { width:210px; max-height:60px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  }
 #section_logo_container img { position:relative; right:0px; }
@@ -396,8 +397,9 @@ font-family:var(--font-02); }
   .courses_container:nth-child(3) { display:none; }
   
   .articles_container:nth-child(4) { display:flex; }
-  
-  #section_001 {  background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row;   }
+
+  #section_001 {background-color: #c5c1c1;
+    opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row;   }
   #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
   
   #section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; height:460px;  margin-top:10px; }
@@ -445,7 +447,8 @@ font-family:var(--font-02); }
 .articles_container:nth-child(6) { display:flex; }
 .courses_container:nth-child(3) { display:flex; }
 
-#section_001 { min-height:500px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-evenly;  flex-direction:row; max-width:1920px; gap:60px; padding-left:20px; }
+#section_001 { min-height:500px;background-color: #c5c1c1;
+  opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-evenly;  flex-direction:row; max-width:1920px; gap:60px; padding-left:20px; }
 
 #section_001_B {  height:auto; max-width:650px; display:flex; align-items:center; justify-content:center; position:relative;}
 
@@ -490,16 +493,14 @@ button#section_005_btn { border:transparent; background-color:var(--light-blue);
 .articles_container:nth-child(6)   { display:flex; }
 .courses_container:nth-child(3)    { display:flex; }
 
-#logo-medium-large { width:300px; height:auto; }
-
 #section_logo_container {  width:390px; max-height:100px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  margin-left:70px; }
 #section_logo_container > img { position:relative;  }
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
 
 #section_001 { 
-  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; background-color: #c5c1c1; opacity: 1;
-  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%; 
+  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; background-color: #c5c1c1;
+  opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%; 
 }
 #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
 

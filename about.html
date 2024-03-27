@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles/css/about.css">
     <link rel="stylesheet" href="menu.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title> About -  </title>
+    <title> About - LARA KATERINE  </title>
 </head>
 
 <body>
     <header>
         <div class="header">
         <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
-        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"> </ion-icon>
         <nav class="nav" id="nav-menu">
             <div class="nav__content bd-grid">
                 <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
@@ -56,11 +56,11 @@
 
         <article>
             <div id="section_01_article_02_container_A"> 
-                <h1> -------- </h1>
+                <h1> Lara Katerine </h1>
             </div>
 
             <div id="section_01_article_02_container_B"> 
-                <h2> --- | ENTREPRENEUR  </h2>
+                <h2> LIFE COACH | ENTREPRENEUR </h2>
             </div>
 
             <div id="section_01_article_02_container_C"> 
@@ -144,46 +144,104 @@
                     </div>
                                 </div>
                 </div>
-                <section id="section_01_copy">
-                    <article>
-                        <div id="photo_container_001_copy">
-                            <img src="assets/images/" alt="">
-                        </div>
-                    </article>
-                    <article>
-                        <div id="section_01_article_02_container_A_copy"> 
-                            <h3> My Life was never easy </h3>  
-                        </div>
-                        <div id="section_01_article_02_container_B_copy"> 
-                            <h1> My Journey </h1>
-                        </div>
-                        <div id="section_01_article_02_container_C_copy"> 
-                            <p> 
-                                My journey into life coaching is deeply rooted in my personal story. Growing
-                                up with strict parents in a racially charged environment, I navigated a failed school
-                                system that stifled my creativity and personal
-                                growth. Those early days sparked a deep passion for personal growth and
-                                empowerment. They're the roots of my coaching style, centered on overcoming
-                                tough times and limitations. 
-                            </p> 
-                            <p>
-                                If you're looking to find clarity, rediscover your passion, or simply need support as
-                                you forge your personal, and professional trails, I am here. Together, we'll explore the depths of your
-                                potential and illuminate your next step forward.
-                            </p>
-                        </div>
-                    </article>
-                </section>
+        </article>
+    </section>
+
+    <section id="section_03">
+        <article>
+            <div id="photo_container_003">
+                <img src="assets/images/" alt="">
+            </div>
+        </article>
+
+        <article>
+            <div id="section_03_article_02_container_A"> 
+                <h1> Lara Katerine </h1>
+            </div>
+
+            <div id="section_03_article_02_container_B"> 
+                <h2> My Journey </h2>
+            </div>
+
+            <div id="section_03_article_02_container_C"> 
+                <p>
+                    My journey into life coaching is
+                    deeply rooted in my personal story. Growing
+                    up with strict parents in a racially charged
+                    environment, I navigated a failed school
+                    system that stifled my creativity and personal
+                    growth. 
+                </p>
+                <br>
+
+                <p>
+                    Those early days sparked a deep
+                    passion for personal growth and
+                    empowerment. They're the roots of my
+                    coaching style, centered on overcoming
+                    tough times and limitations.
+                </p>
+            </div>
+            <div id="section_03_article_02_container_B"> 
+                <h2> Your Next Step </h2>
+            </div>
+            <div id="section_03_article_02_container_C"> 
+                <p>
+                    If you’re looking to find
+                    clarity, rediscover your passion, or simply
+                    need support as you forge your personal and
+                    professional trails, I am here. Together, we’ll
+                    explore the depths of your potential and
+                    illuminate your next step forward.
+                </p>
+            </div>
+            <div class="tooltip">
+                <button> Begin My Journey ✨ </button>
+                <div class="tooltiptext"> You're almost there! </div>
+            </div>
+
         </article>
     </section>
 
 </body>
 
-<script src="./javascript/burguer_menu.js"></script>
-<script src="./javascript/reveal_animation.js"></script>
-<script src="./javascript/menu_hide_appear_function.js"></script>
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<script src="javascript/reveal_animation.js"></script>
+<script src="javascript/carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"  integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="javascript/menu_hide_appear_function.js"></script>
+<script src="javascript/know_more.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="/javascript/articles_hover_click.js"></script>
 
+<script defer>
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+    audio.play();
+    });
+        });
+</script>
+
+<script>
+    document.getElementById("download_form").addEventListener("submit", function(event) {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    
+    // Perform input validation
+    var nameRegex = /^[A-Za-z\s]+$/; // Only alphabets and spaces allowed
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation
+
+    if (!nameRegex.test(name) || !emailRegex.test(email)) {
+        // Inputs are invalid, change container color to red
+        document.getElementById("section_01_container_F").style.backgroundColor = "red";
+        event.preventDefault(); // Prevent form submission
+    }
+});
+
+</script>
 </html>
 
 

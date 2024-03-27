@@ -58,7 +58,7 @@ img { height:auto; width:100%; }
 #section_01 > article { height:550px; display:flex; align-items:center; justify-content:center; flex-direction:column; width:100%; backdrop-filter: blur(6px); background-color: #ffffff83; }
 #article_container { display:flex;; flex-direction:column; align-items:flex-start; justify-content:space-evenly; }
 #section_logo_container {  width:auto; max-height:60px; display:flex; align-items:center; justify-content:flex-start; }
-#section_logo_container img { height:auto; border:1px solid white; width:200px; margin-left:60px; }
+#section_logo_container img { height:auto; width:200px; margin-left:60px; }
 #section_01_container_A {  width:320px; display:flex;  align-items:center;  justify-content:flex-start;  margin-top:10px; height:42px;;}
 #section_01_container_A > h1 { text-align:left;  color: #037486; font-size:40px; font-size:var(--font-01); }
 
@@ -360,25 +360,22 @@ label { display:none;}
 @media screen and ( min-width:752px) and ( max-width:991px) { 
 #section_01 { display:none; }
 #section_01 > article { display:none; }
-#section_logo_container_large { display:none; }
 .section_01_btn { font-family:var(--font-01); font-size:18px; padding: 15px 30px;font-weight:bold; }
 .courses_container:nth-child(3) { display:none; }
 .articles_container:nth-child(4) { display:flex; }
-#section_001 { min-height:300px; background-color: #c5c1c1;
-  opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px; padding-left:20px;  }
-#Lara_main_image_home_page { display:none; height:300px; width:480px;  }
-#section_logo_container { width:210px; max-height:60px; display:flex;  align-items:center; justify-content:flex-start; margin-top:40px;  }
-#section_logo_container img { position:relative; right:0px; }
-#section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; max-height:70px; margin-top:10px;}
+#section_001 { min-height:300px; background-color: #c5c1c1; opacity: 1;  background-image:linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); 
+  background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px; padding-left:20px;  }
+#Lara_main_image_home_page { display:none; height:300px; width:480px;   }
+
+#section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; max-height:70px; margin-top:10px; border:1px solid red; }
 #section_001_container_A > h1 { text-align:left; font-family:var(--font-03); color: #037486; font-size:33.7px; flex:1;}
-#section_001_container_B {  height:110px; width:370px;  display:flex;  align-items:center;  justify-content:flex-start; margin-top:10px; }
+#section_001_container_B {  height:auto; max-width:570px;  display:flex;  align-items:center;  justify-content:flex-start; margin-top:10px;  border:1px solid red; }
 #section_001_container_B > p { text-align:left; font-family:var(--font-03); color: #575757; }
 #section_001_B {  height:auto; max-width:480px; display:flex; align-items:center; justify-content:center; }
 .articles_container:nth-child(4) { display:flex; }
 #section_005 { height:400px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-between; padding-left:50px; max-width:1240px; flex-direction:row; padding-right:50px; gap:10px; display:none;}
-#section_005_A {  height:280px; width:350px; display:flex; align-items:center; justify-content:space-between; flex-direction:column;}
+#section_005_A {  height:280px; width:350px; display:flex; align-items:center; justify-content:space-between; flex-direction:column; }
 #section_005_B {  height:300px; width:440px; }
-
 
 #section_005_sub_container_A1 {  height:80px; width:300px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; }
 button#section_005_btn { border:transparent; background-color:var(--light-blue); color:var(--bege); width:190px; border-radius:5px; }
@@ -397,22 +394,21 @@ font-family:var(--font-02); }
   .section_01_btn { font-family:var(--font-01); font-size:18px; padding:8px 40px; }
   #pre-footer { display:none; }
   .courses_container:nth-child(3) { display:none; }
-  
   .articles_container:nth-child(4) { display:flex; }
 
-  #section_001 {background-color: #c5c1c1;
-    opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row;   }
+  #section_001 { background-color: #c5c1c1; opacity: 1;  background-image: linear-gradient(to right, #ebe6e4, #ebe6e4 2px, #c5c1c1 2px, #c5c1c1 ); 
+                  background-size: 3px 100%;  display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; 
+                }
   #Lara_main_image_home_page { display:none; height:300px; width:480px;  }
   
-  #section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; height:460px;  margin-top:10px; }
+  #section_001_container_A {   max-width:470px;  display:flex;  align-items:center;  justify-content:flex-start; height:490px;  margin-top:10px; }
   #section_001_container_A > h1 { text-align:left; font-family:var(--font-03); color: #037486; font-size:33.7px; flex:1; }
   
   #section_001_container_B {  height:110px; width:370px;  display:flex;  align-items:center;  justify-content:flex-start; margin-top:10px; }
   #section_001_container_B > p { text-align:left; font-family:var(--font-03); color: #575757;}
   #section_logo_container img { position:relative; right:0px; }
 
-  #section_001_A {  height:380px; width:580px; display:flex; align-items:flex-start; justify-content:flex-start; flex-direction:column; padding:12px;;  }
-  
+  #section_001_A {  height:380px; width:580px; display:flex; align-items:flex-start; justify-content:flex-start; flex-direction:column; padding:12px;   }
   #section_001_B {  height:auto; max-width:480px; display:flex; align-items:center; justify-content:center; }
   
   .articles_container:nth-child(4) { display:flex; }

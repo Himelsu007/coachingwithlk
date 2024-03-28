@@ -79,10 +79,10 @@ img { height:auto; width:100%; }
 /* Section 02 */
 
 #section_02 { background:var(--bege); display:flex; align-items:center; justify-content: center; min-height:700px; flex-direction:column; display:none;  }
-#section_02 > h1 { margin-top:40px; margin-bottom:20px; font-family:var(--font-01);  font-style:normal; font-size:30px; font-weight:700; color: #575757;}
+#section_02 > h1 { margin-top:40px; margin-bottom:20px; font-family:var(--font-01);  font-style:normal; font-size:30px; font-weight:700; color: #575757; }
 #section_02 > article { height:590px; max-width:1403px; display:flex; flex-direction:row; align-items:center; justify-content:center; flex-wrap:wrap; margin-bottom:10px; gap:90px; } 
 #section_02_heading_container { max-width:400px; height:490px; min-width:370px; display:flex; align-items:flex-start; justify-content:space-between; flex-direction:column;  }
-#section_02_heading_container > h1 { font-family:var(--font-02); font-size:33px; margin-top:10px; font-weight:400; color: #575757; }
+#section_02_heading_container > h1 { font-family:var(--font-02); font-size:33px; margin-top:10px; font-weight:bold; color: #575757; font-style:italic; }
 #section_02_heading_container > p { font-family:var(--font-01); font-size:18px;  margin-top:10px; font-weight:900; color:rgb(54, 54, 54);}
 #section_02_coach-sitting     {  max-width:420px; height:490px; min-width:380px; display:flex; align-items:center; justify-content:center;}
 
@@ -112,7 +112,7 @@ img { height:auto; width:100%; }
 #section_05 > #section_05_article_01 {  max-width:600px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:5px; border:1px solid black;  }
 #section_05 > #section_05_article_01 > h5 > a { color:#037486; text-decoration:underline; }
 #section_05 > #section_05_article_02 {  max-width:670px; display:flex;  align-items:center; justify-content:center; border:1px solid black;  }
-#section_05_article_01 > h1 { font-family:var(--font-02); font-style:normal; font-size:30px; font-weight:700; color:#212121c2; text-align:center;}
+#section_05_article_01 > h1 { font-family:var(--font-02); font-style:italic; font-size:40px; font-weight:700; color:#212121c2; text-align:center;}
 #section_05 > article > p  { text-align:justify; padding:16px; font-size:17.6px; font-family:sans-serif; font-weight:400; font-kerning:auto; color:#212121; } 
 #section_05_article_01 > h5 { font-family:Arial, Helvetica, sans-serif; font-style:normal; font-size:13.8px; font-weight:400; color: rgb(46, 46, 46); text-align:center; padding:5px;}
 #workbook_container { display:flex; align-items:center; justify-content:space-between; flex-direction:column;   }
@@ -158,6 +158,9 @@ img { height:auto; width:100%; }
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:pointer;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.918); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
+#articles_btn_02 > button:hover { scale:0.9; cursor: pointer;  }
+#articles_btn_02 > button:active { background-color:#015e6c;  }
+
 .articles_container {  min-height:490px; width:340px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; background-color:white; border-radius:4px;  transition: all 0.3s ease; cursor:pointer;}
 .articles_container:hover { scale:1.05; }
 

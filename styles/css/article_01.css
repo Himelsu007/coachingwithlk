@@ -37,7 +37,7 @@ html           { scroll-behavior:smooth; background-color:#f5edea86}
 body           {  height:100dvh; }
 .reveal        { position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
 .reveal.active {  transform:translateY(1px); opacity:1; }
-a:hover {  cursor: pointer;                             }
+a:hover {  cursor: pointer;                              }
 a        { text-decoration:none; font-weight:400;        }
 img      { height:auto; width:100%;                      }
 .row     { display:flex; justify-content: space-between; width:88%; margin:auto; align-items:center;  }
@@ -45,7 +45,7 @@ img      { height:auto; width:100%;                      }
 /* Section 01  */
 
 #section_01 > article { border-bottom:1px solid black; height:340px; width:93%; display:flex; flex-direction:column; align-items:center; justify-content:flex-start;  }
-.audio_version_triger_container { border:2px solid black; height:50px; width:230px; border-radius:30px; margin-top:20px; display:flex; align-items:center; justify-content:center; gap:9px;}
+.audio_version_trigger_container { border:2px solid black; height:50px; width:230px; border-radius:100px; margin-top:20px; display:flex; align-items:center; justify-content:center; gap:9px; cursor:pointer; background-color:white;}
 
 
 /* Remove padding on red section bordered */

@@ -67,12 +67,13 @@
                     <h1> The Transformative Journey of Life Coaching </h1>
                     <p>   Written by: <a href="about.html" > Lara Katerine  </a>  </p>
                     <p>  filed under: HAPPINESS | MOTIVATION  | PERSONAL VALUES   </p>
-                    <div class="audio_version_triger_container">
-                        <ion-icon name="play-circle-outline" style="height:30px; width:30px;"> </ion-icon>
-                        <ion-icon name="stop-circle-outline" style="height:30px; width:30px;"></ion-icon>
-                        <dotlottie-player src="https://lottie.host/e792723d-bd89-4ebb-b35f-a5a93688285e/iFo2w1KSGF.json" background="transparent" speed="1" style="width: 30px; height: 30px;" loop autoplay></dotlottie-player>
-                        <h4> Listen to this Article </h4>
-                    </div>
+                    <audio id="audio" src="assets/audio/rachel-life-coaching-ai.mp3"></audio>
+                    <a class="audio_version_trigger_container">
+                        <ion-icon id="playIcon" name="play-circle-outline" style="height:30px; width:30px;"></ion-icon>
+                        <ion-icon id="stopIcon" name="stop-circle-outline" style="height:30px; width:30px; display: none;"></ion-icon>
+                        <dotlottie-player id="animation" src="https://lottie.host/e792723d-bd89-4ebb-b35f-a5a93688285e/iFo2w1KSGF.json" background="transparent" speed="1" style="width: 30px; height: 30px; display: none;" loop autoplay></dotlottie-player>
+                        <h4>Listen to this Article</h4>
+                    </a>
             </article>
 
             <article>
@@ -217,6 +218,7 @@
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script src="../javascript/footer_year_auto_update.js"></script>
 <script src="../javascript/loader.js"></script>
+<script src="javascript/article_audio_system.js"></script>
 </html>
 
 

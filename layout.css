@@ -106,7 +106,7 @@
 }
 
 
-@media screen and ( min-width:1325px) and ( max-width:1523px) { 
+@media screen and ( min-width:1325px) and ( max-width:1423px) { 
 
 #section_001 { min-height:590px; background-color:var(--bege); display:flex; align-items:flex-end; justify-content:space-between;  flex-direction:row; max-width:1920px;  }
 #section_001_B {  height:auto; max-width:650px; display:flex; align-items:center; justify-content:center; position:relative;}

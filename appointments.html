@@ -18,14 +18,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./src/assets/icons/fav_icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icons/fav_icon/favicon-16x16.png">
     <link rel="manifest" href="./src/assets/icons/fav_icon/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="appointments.css">    
     <link rel="stylesheet" href="menu.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
     <title> Appointments </title>
 </head>
-
-<body>
     <header>
         <div class="header">
 
@@ -45,12 +43,10 @@
 
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item"> <a href="index.html" class="nav__link">  Home         </a> </li>
-                        <li class="nav__item"> <a href="appointments.html" class="nav__link"  style="color: #037486; font-weight:bold;">  Appointments  </a> </li>
-                        <!-- <li class="nav__item"> <a href="courses.html" class="nav__link">  Courses    </a> </li> -->
-                        <li class="nav__item"> <a href="articles.html" class="nav__link">  Articles      </a> </li>
-                        <li class="nav__item"> <a href="about.html" class="nav__link">  About Me    </a> </li>
-                        <li class="nav__item"> <a href="coaching.html" class="nav__link">  Coaching   </a> </li>
+                        <li class="nav__item"> <a href="index.html" class="nav__link" style="color: #037486; font-weight: bold;">  Home </a> </li>
+                        <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
+                        <li class="nav__item"> <a href="about.html" class="nav__link"> About Me </a> </li>
+                        <li class="nav__item"> <a href="articles.html" class="nav__link">     Articles      </a> </li>
                     </ul>
                 </div>
 
@@ -63,12 +59,57 @@
         </nav>
     </div>
     </header>
+<body class="">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/coachlarakaterine/free-consultation?hide_gdpr_banner=1" style="min-width:100wh; height:100dvh;"> </div>
+<footer class="footer">
+    <div class="footer_container">
+        <div class="row_">
+            <div class="footer-col">
+                <h4>follow Me </h4>
+                <div class="social-links">                    
+                    <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
+                    <a href="#"> <i class="fab fa-instagram">   </i></a>
+                    <a href="#"> <i class="fab fa-tiktok">      </i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4> Explore </h4>
+                <ul>
+                    <li><a href="articles.html"> Articles </a></li>
+                    <li><a href="#"> Terms of Use </a></li>
+                    <li><a href="#"> Free Workbook </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4> Terms of use </h4>
+                <ul>
+                    <li><a href="#"> Privacy and Policy   </a>     </li>
+                    <li><a href="#"> Terms and conditions </a> </li>
+                    <li><a href="#"> Cookie Consent </a></li>
+                </ul>
+            </div>
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/coachlarakaterine/free-consultation?hide_gdpr_banner=1" style="min-width:100wh; height:100dvh;"> </div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async> </script>
-<footer>     
-    <div id="footer_container_C">
-        <a href="#" id="copyright"> © 2023 Lara Katerine. ALL RIGHTS RESERVED </a>
+            <div class="footer-col" id="contact_me">
+                <h4> Contact Me </h4>
+                <form action="#" class="awesome-form">
+                    <input type="text" id="name" class="input-field" placeholder="Your Name">
+                    <input type="email" id="email" class="input-field" placeholder="Your Email">
+                    <select id="attendance" class="input-field">
+                        <option value=""> <span>Choose a Topic</span>    </option>
+                        <option value="stress"> Career transition and advancement </option>
+                        <option value="marriage">Relationship and communication skills improvement </option>
+                        <option value="other"> Personal development and goal setting  </option>
+                        <option value="other"> Work-life balance and prioritization  </option>
+                        <option value="other"> Financial management and wealth building </option>
+                        <option value="other"> Decision making and problem-solving skills development </option>
+                        <option value="other"> Confidence building and self-esteem improvement </option>
+                        <option value="other"> Other </option>
+                    </select>
+                    <input type="text" id="message" class="input-field" placeholder=" Describe your challenge">
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
@@ -79,7 +120,7 @@
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script src="./javascript/footer_year_auto_update.js"> </script>
-
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async> </script>
 </html>
 
 

@@ -1,17 +1,75 @@
-#pre-footer { min-height:90px;  display:flex; align-items:center; justify-content:center;  flex-direction:column; background-color:white;}
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
-div#copyright_container {  
-  border-top:1px solid gray; height:100px; display:flex; align-items:center; justify-content:space-around;
-  flex-direction:column; margin-top:20px; min-width:300px; 
+* { margin:0px; padding:0px; box-sizing:border-box;  }
+
+:root  {  
+            --white:#FFFFFF;
+            --bege:#F5EDEA;
+            --light-blue:#037486;
+            --dark-gray:#d1d2d6;
+            --coach-container:#0375877a;;
+            --font-01:'Inter';
+            --font-02:'Playfair Display';
+            --font-03:'DM Sans';
+            --font-04:'MontSerrat';
+            --font-05:'Proxima Nova Condensed'
+            --m: 4rem;
+              --dark-color: hsl(var(--hue), 100%, 9%);
+  --light-color: hsl(var(--hue), 95%, 98%);
+  --base: hsl(var(--hue), 95%, 50%);
+  --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+  --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
+  --font-family: "Poppins", system-ui;
+  --bg-gradient: linear-gradient( to bottom, hsl(var(--hue), 95%, 99%), hsl(var(--hue), 95%, 84%) );
 }
 
-footer { height:120px; display:flex; flex-direction:column; align-items:center; justify-content:center;  gap:10px; background-color:#070d1fee; }
-#footer_container_A { 
-  border:1px solid rgb(219, 9, 9); width:100%; height:80px; display:flex; align-items:center; justify-content:space-between; 
-  background-color:white; padding:10px;
-}
-#footer_container_A > a  { border-radius:50%; background-color: #e41bffe0; width:50px; height:50px; display:flex; align-items:center; justify-content:center; }
+.scrolling-text { white-space: nowrap; overflow: hidden; animation: scrollRight 10s linear infinite; }
 
+@keyframes scrollRight { 0% { transform: translateX(0%); } 100% { transform: translateX(100%); } }
 
-#footer_container_C  { display:flex; align-items:center; justify-content:center; }
-#footer_container_C > a { color:white; font-size:10px; } 
+html,body { scroll-behavior:smooth; 	background: linear-gradient(-45deg, #F5EDEA, #037486, #025c70, #1f1e07); background-size: 400% 400%; animation: gradient 15s ease infinite; height: 100vh;  }
+
+  @keyframes gradient {
+    0%  { background-position: 0% 50%;   }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%;  }
+  }
+
+body::-webkit-scrollbar { display: none; }
+
+.reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
+.reveal.active {  transform:translateY(1px); opacity:1; }
+a:hover {  cursor: pointer; }
+a { text-decoration:none; font-weight:400;  } 
+img { height:auto; width:100%; }
+.row { display:flex; justify-content: space-between; width:88%; margin:auto; align-items:center;  }
+.hidden { opacity: 0; pointer-events: none; }
+#promo_section { height:50px; background-color: #037486; display:flex; align-items:center; justify-content:center; }
+
+/* Footer  */
+.footer_container{ max-width: 1470px; margin:auto; }
+.row_{ display: flex; flex-wrap: wrap  }
+ul{ list-style: none; }
+.footer{ background-color: #070D1F; padding: 70px 0 }
+.footer-col{ width: 25%; padding: 0 15px }
+.footer-col h4{ font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative }
+.footer-col h4::before{ content: ''; position: absolute; left:0; bottom: -10px; background-color: #015e6c; height: 2px; box-sizing: border-box; width: 50px }
+.footer-col ul li:not(:last-child){ margin-bottom: 10px }
+.footer-col ul li a{ font-size: 16px; text-transform: capitalize; color: #ffffff; text-decoration: none; font-weight: 300; color: #bbbbbb; display: block; transition: all 0.3s ease }
+.footer-col ul li a:hover{ color: #ffffff; padding-left: 8px }
+.footer-col .social-links a{ display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin:0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease }
+.footer-col .social-links a:hover{ color: #24262b; background-color: #ffffff }
+
+/*responsive*/
+@media(max-width: 767px){ .footer-col { width: 50%; margin-bottom: 30px } }
+@media(max-width: 574px){ .footer-col{ width: 100%; } }
+.awesome-form { max-width: 400px; border-radius: 8px; }
+.input-field { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box }
+.submit-button { width: 100%; background-color: #025c70; color: white; padding: 10px 0; margin: 10px 0; border: none; border-radius: 5px; cursor: pointer }
+.input-field.invalid { border: 1px solid red }

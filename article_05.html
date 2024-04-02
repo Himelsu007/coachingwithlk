@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/fav_icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/fav_icon/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/fav_icon/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/css/article_05.css">
     <link rel="stylesheet" href="menu.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -28,7 +29,6 @@
 <body>
     <header>
         <div class="header">
-
         <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
         <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
         <nav class="nav" id="nav-menu">
@@ -47,7 +47,6 @@
                     <ul class="nav__list">
                         <li class="nav__item"> <a href="index.html" class="nav__link">  Home         </a> </li>
                         <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
-                        <!-- <li class="nav__item"> <a href="courses.html" class="nav__link">  Courses    </a> </li> -->
                         <li class="nav__item"> <a href="articles.html" class="nav__link">  Articles      </a> </li>
                         <li class="nav__item"> <a href="about.html" class="nav__link">  About Me    </a> </li>
                         <li class="nav__item"> <a href="coaching.html" class="nav__link">  Coaching   </a> </li>
@@ -68,9 +67,9 @@
         <section id="section_02">
             <article>
                     <h1> Common Life Coaching Requests </h1>
-                    <p>   Written by: <a href="about.html" class="link_hover"> Lara Katerine  </a>  </p>
+                    <p>  Written by: <a href="about.html" class="link_hover"> Lara Katerine  </a>  </p>
                     <p>  filed under: HAPPINESS | MOTIVATION  | PERSONAL VALUES   </p>
-                    <audio id="audio" src="assets/audio/rachel-life-coaching-ai.mp3"></audio>
+                    <audio id="audio" src="assets/audio/article_05.mp3"></audio>
                     <a class="audio_version_trigger_container">
                         <ion-icon id="playIcon" name="play-circle-outline" style="height:30px; width:30px;"></ion-icon>
                         <ion-icon id="stopIcon" name="stop-circle-outline" style="height:30px; width:30px; display: none;"></ion-icon>
@@ -151,7 +150,7 @@
                     <div class="article_fam_container"> <a href="article_02.html" class="source_serif_bold link_hover"> Embracing Change with Life Coaching Techniques </a> </div>
                     <div class="article_fam_container"> <a href="article_03.html" class="source_serif_bold link_hover"> Understanding the Role of a Life Coach </a> </div>
                     <div class="article_fam_container"> <a href="article_04.html" class="source_serif_bold link_hover"> Who Can Benefit from Life Coaching? </a> </div>
-                    <div class="article_fam_container"> <a href="article_05.html" class="source_serif_bold link_hover"> Common Life Coaching Requests  </a> </div>
+                    <div class="article_fam_container"> <a href="article_01.html" class="source_serif_bold link_hover"> The Transformative Journey of Life Coaching</a> </div>
                     <div class="article_fam_container"> <a href="article_06.html" class="source_serif_bold link_hover"> Signs You're Ready for a Transformative Journey </a> </div>
                     <div class="article_fam_container"> <a href="article_07.html" class="source_serif_bold link_hover"> The Comprehensive Benefits of Life Coaching </a> </div>
                     <div class="article_fam_container"> <a href="article_08.html" class="source_serif_bold link_hover"> Choosing the Right Life Coach </a> </div>
@@ -167,7 +166,59 @@
             </div>
         </div>
     </main>
-
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="row_">
+    
+                <div class="footer-col">
+                    <h4>follow Me </h4>
+                    <div class="social-links">                    
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4> Explore </h4>
+                    <ul>
+                        <li><a href="articles.html"> Articles </a></li>
+                        <li><a href="appointments.html"> Appointments </a></li>
+                        <li><a href="#section_001"> Free Workbook </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Terms of use </h4>
+                    <ul>
+                        <li><a href="#"> Privacy and Policy </a></li>
+                        <li><a href="#"> Terms and conditions </a></li>
+                        <li><a href="#section_001"> Cookie Consent </a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4> Contact Me </h4>
+                    <form action="#" class="awesome-form">
+                        <input type="text" id="name" class="input-field" placeholder="Your Name">
+                        <input type="email" id="email" class="input-field" placeholder="Your Email">
+                        <select id="attendance" class="input-field">
+                            <option value=""> <span>Choose a Topic</span>    </option>
+                            <option value="stress"> Career transition and advancement </option>
+                            <option value="marriage">Relationship and communication skills improvement </option>
+                            <option value="other"> Personal development and goal setting  </option>
+                            <option value="other"> Work-life balance and prioritization  </option>
+                            <option value="other"> Financial management and wealth building </option>
+                            <option value="other"> Decision making and problem-solving skills development </option>
+                            <option value="other"> Confidence building and self-esteem improvement </option>
+                            <option value="other"> Other </option>
+                        </select>
+                        <input type="text" id="message" class="input-field" placeholder="Your Message">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 

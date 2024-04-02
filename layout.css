@@ -47,12 +47,24 @@
     #section_05 > #section_05_article_02 {  max-width:490px; height:439px;  }
     }
 
-@media screen and (min-width:1131px)  { 
+@media screen and (min-width:1131px) and (max-width:1204px) { 
     #section_05 > #section_05_article_02 { display:flex; }
     #section_05_article_01 > img { display:none; }
     #section_05 > #section_05_article_01 {  max-width:490px;   }
     #section_05 > #section_05_article_02 {  max-width:540px; height:420px;  }
 }
+
+@media screen and (min-width:1205px) and (max-width:1323px) { 
+    #section_05 > #section_05_article_02 { display:flex; }
+    #section_05_article_01 > img { display:none; }
+    #section_05 > #section_05_article_01 {  max-width:540px;   }
+    #section_05 > #section_05_article_02 {  max-width:580px; height:401px;  }
+}
+
+@media screen and (min-width:1205px) { 
+    #section_05_article_01 > img { display:none; }
+}
+
 
 .loader_pg { width:48px; height:48px; border-radius:50%; display:inline-block; border-top:3px solid #000000; border-right:3px solid transparent; box-sizing:border-box; animation:rotation 1s linear infinite; }
 

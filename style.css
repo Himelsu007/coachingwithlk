@@ -143,7 +143,7 @@ img { height:auto; width:100%; }
 }
 
 #section_06_heading > h1 {  color:white; font-family:var(--font-01); font-size:35px; text-align:center;}
-#section_06_heading { margin-top:50px; margin-bottom:50px;  min-width:340px;}
+#section_06_heading { margin-top:50px; margin-bottom:50px; border:1px solid white; min-width:340px;}
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:pointer;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.918); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; }
@@ -190,7 +190,7 @@ img { height:auto; width:100%; }
 
 #section_07 { background-color: #2b4162; background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); display:flex; align-items:center; justify-content:center; min-height:700px; }
 
-#section_07 > article {  width:80%; display:flex; align-items:center; justify-content:space-between;  }
+#section_07 > article { border:1px solid white; width:80%; display:flex; align-items:center; justify-content:space-between;  }
 
 /* faq Container */
 
@@ -233,11 +233,11 @@ html::-webkit-scrollbar-thumb { border-radius: px; background-color: #037486; }
 
 /* Footer  */
 
-.footer_container{ max-width: 2470px; margin:auto;  padding-left:40px; padding-right:40px;}
+.footer_container{ max-width: 2470px; margin:auto; border:1px solid white; padding-left:40px; padding-right:40px;}
 .row_{ display: flex; flex-wrap: wrap  }
 ul{ list-style: none; }
 .footer{ background-color: #070D1F; padding: 70px 0;  }
-.footer-col{ width: 25%; padding: 0 15px;  }
+.footer-col{ width: 25%; padding: 0 15px; border:1px solid white; }
 .footer-col h4{ font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative }
 .footer-col h4::before{ content: ''; position: absolute; left:0; bottom: -10px; background-color: #015e6c; height: 2px; box-sizing: border-box; width: 50px }
 .footer-col ul li:not(:last-child){ margin-bottom: 10px }

@@ -48,12 +48,11 @@ img { height:auto; width:100%; }
 }
 
 #section_01 > article { height:550px; display:flex; align-items:center; justify-content:center; flex-direction:column; width:100%; backdrop-filter: blur(6px); background-color: #ffffff83;  }
-#article_container { display:flex;; flex-direction:column; align-items:flex-start; justify-content:space-between; border:1px solid black; height:300px;}
+#article_container { display:flex;; flex-direction:column; align-items:flex-start; justify-content:space-between; height:270px;}
 #section_logo_container {  width:auto; max-height:60px; display:flex; align-items:center; justify-content:flex-start; }
 #section_logo_container img { height:auto; width:200px; margin-left:60px; }
 #section_01_container_A {  width:370px; display:flex;  align-items:center;  justify-content:flex-start;  margin-top:10px; height:42px;;}
 #section_01_container_A > h1 { text-align:left;  color: #037486; font-size:40px; font-size:var(--font-01); }
-
 #section_01_container_B {  height:110px; width:320px;  display:flex;  align-items:center;  justify-content:flex-start; margin-top:10px;;}
 #section_01_container_B > p { text-align:left; font-family:var(--font-03); }
 

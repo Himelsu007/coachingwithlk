@@ -110,42 +110,29 @@ button:hover::before, button:focus::before { width: 150%; height: 150%; opacity:
   
 .read_blog_btn_style_01:hover { background-color: #037486;  transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
-/*  Animations  */
+/* Footer  */
 
-.loader_pg {
-  width: 48px; height: 48px; border-radius: 50%; display: inline-block; border-top: 3px  #000000;
-  border-right: 3px  transparent; box-sizing: border-box; animation: rotation 1s linear infinite;
-}
+.footer_container{ max-width: 1470px; margin:auto; }
+.row_{ display: flex; flex-wrap: wrap  }
+ul{ list-style: none; }
+.footer{ background-color: #070D1F; padding: 70px 0 }
+.footer-col{ width: 25%; padding: 0 15px }
+.footer-col h4{ font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative }
+.footer-col h4::before{ content: ''; position: absolute; left:0; bottom: -10px; background-color: #015e6c; height: 2px; box-sizing: border-box; width: 50px }
+.footer-col ul li:not(:last-child){ margin-bottom: 10px }
+.footer-col ul li a{ font-size: 16px; text-transform: capitalize; color: #ffffff; text-decoration: none; font-weight: 300; color: #bbbbbb; display: block; transition: all 0.3s ease }
+.footer-col ul li a:hover{ color: #ffffff; padding-left: 8px }
+.footer-col .social-links a{ display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin:0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease }
+.footer-col .social-links a:hover{ color: #24262b; background-color: #ffffff }
 
-.loader_overlay {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgb(255, 255, 255); backdrop-filter:blur(40px);
-    display: none; /* Initially hidden */ align-items: center; justify-content: center; opacity: 0; transition: opacity 0.5s ease-in-out;  z-index: 99999;
-}
+/*responsive*/
+@media(max-width: 767px){ .footer-col { width: 50%; margin-bottom: 30px } }
+@media(max-width: 574px){ .footer-col{ width: 100%; } }
 
-@keyframes rotation {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} 
-
-.mobile_p { display:none; }
-.mobile_h3 {display:flex; }   
-.laptop_h3 {display:none; }
-.laptop_p_02 { display:none; }
-
-/* Pre- Footer and Footer */
-
-#pre-footer { min-height:90px;  display:flex; align-items:center; justify-content:center;  flex-direction:column; background-color:white;}
-div#copyright_container {   border-top:1px  gray; height:100px; display:flex; align-items:center; justify-content:space-around; flex-direction:column; min-width:300px; }
-
-footer { max-height:110px; display:flex; flex-direction:column; align-items:center; justify-content:center;  gap:10px; background-color:#070d1fee; position:relative; bottom:1px;}
-#footer_container_A { width:100%; height:80px; display:flex; align-items:center; justify-content:space-between; background-color:rgba(146, 146, 146, 0.554); padding:10px; }
-#footer_container_A:hover  #arrow_forward_sharp { color:rgb(8, 195, 8); }
-
-#arrow_forward_sharp { color:white; }
-#footer_container_A > a  { border-radius:50%; background-color: #000000e0; width:50px; height:50px; display:flex; align-items:center; justify-content:center;  }
-#footer_container_A > h3  { font-family:var(--font-01); color:white; }
-#footer_container_C  { display:flex; align-items:center; justify-content:center; }
-#footer_container_C > a { color:white; font-size:10px;  } 
+.awesome-form { max-width: 400px; border-radius: 8px; }
+.input-field { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box }
+.submit-button { width: 100%; background-color: #025c70; color: white; padding: 10px 0; margin: 10px 0; border: none; border-radius: 5px; cursor: pointer }
+.input-field.invalid { border: 1px solid red }
 
 /* ----------------------------------------------------------------------------------------------- Small TABLETS  ---------------------------------------------------------------------------------------- */
 

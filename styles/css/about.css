@@ -44,19 +44,19 @@ a:hover {  cursor: pointer;}
 a { text-decoration:none; font-weight:400;  } /* 1.6rem == 16px */
 img { height:auto; width:100%; }
 
-#section_01 { border: 1px solid red; display: flex; flex-wrap: wrap;  justify-content: center; }
-#section_01 > article { border: 1px solid black; width: calc(50% - 0px);   display: flex; flex-direction: column;  align-items: center; height: 650px; }
+#section_01 {  display: flex; flex-wrap: wrap;  justify-content: center; }
+#section_01 > article {  width: calc(50% - 0px);   display: flex; flex-direction: column;  align-items: center; height: 650px; }
 #section_01 > article:nth-child(1) { justify-content:center;  background-color:#006777; }
 #section_01 > article:nth-child(2) { justify-content:center; background-color: #F5EDEA; }
 #photo_container_001 { border: 2px solid black;  border-radius:50%; height:500px; width:400px; background-position-x:-0px; background-image:url('../../assets/images/lara-sitting-straight-face.JPG'); background-repeat:no-repeat; background-size:cover; }
 
-#section_01_article_02_container_A { border: 1px solid black; width:70%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:80px; }
+#section_01_article_02_container_A {  width:70%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:80px; }
 #section_01_article_02_container_A > h1 { font-family:var(--font-02); font-size:33px; }
 
-#section_01_article_02_container_B { border: 1px solid black; width:80%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:70px; }
+#section_01_article_02_container_B {  width:80%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:70px; }
 #section_01_article_02_container_B > h2 { font-family:var(--font-02); font-size:21px; font-weight:normal; }
 
-#section_01_article_02_container_C { border: 1px solid black; width:80%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:110px; padding:10px; }
+#section_01_article_02_container_C {  width:80%; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:110px; padding:10px; }
 #section_01_article_02_container_C > p { font-family:var(--font-01); font-size:21px; font-weight:normal; }
 
 
@@ -65,7 +65,7 @@ img { height:auto; width:100%; }
 #section_01 { flex-direction: column;  }  
 #section_01_article_02_container_A,
 #section_01_article_02_container_B,
-#section_01_article_02_container_C { border: 1px solid black; width:calc(100% - 20px); padding:10px;  margin:5px auto; box-sizing: border-box; }
+#section_01_article_02_container_C {  width:calc(100% - 20px); padding:10px;  margin:5px auto; box-sizing: border-box; }
 #container_btn_external { display: flex; justify-content: center;  }
 #section_01 > article { width: calc(100% - 10px);  } 
 }

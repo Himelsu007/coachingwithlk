@@ -61,6 +61,7 @@
     #section_05 > #section_05_article_02 {  max-width:580px; height:401px;  }
 }
 
+
 @media screen and (min-width:1205px) { 
     #section_05_article_01 > img { display:none; }
 }

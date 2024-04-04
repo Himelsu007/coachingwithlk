@@ -125,13 +125,14 @@
         <article id="section_05_article_02"> <img src="assets/images/workbook_fversion.png" alt="workbook"> </article> 
 
         <article id="section_05_article_01"> 
-            <h1> Say <span style="font-family:var(--font-01); font-style:normal; font-weight:500;">Goodbye</span> to Stress and Anxiety </h1> <br>
+            <h1> <span style="font-family:var(--font-01); font-style:normal; font-weight:500;">Say Goodbye</span> to Stress and Anxiety </h1> <br>
             <img src="assets/images/workbook_fversion.png" alt="workbook"> 
-            <p>  Claim your <strong>FREE</strong> Workbook and begin your tranformational journey towards managing Stress and Anxiety effectively. </p>
+            <p>  Claim your <span style="font-weight:bold; text-decoration:underline;">FREE</span> Workbook and begin your tranformational journey towards managing Stress and Anxiety effectively. </p>
             <form id="download_form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
                 <input type="text" id="name" name="name" placeholder="First Name" required>
                 <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                <div class="h-captcha" data-captcha="true"></div>
                 <button id="download_form_button" type="button">Download Workbook</button>
             </form>
             <h5>    
@@ -142,6 +143,8 @@
     </section>
 
 <section  id="section_04">
+
+    <h1 style="font-style:italic; font-family:var(--font-02); font-size:50px;"> Here's what my Clients Say </h1>
     <div class="wrapper">
         <ul class="carousel">
         <li class="card">
@@ -194,7 +197,7 @@
 <h1> Get to know your <span style="font-style:italic; font-family:var(--font-02); color:#037486;"> Coach </span>  on this journey </h1>
     <article>
         <div id="section_02_heading_container">
-            <h1> ABOUT ME </h1>
+            <h1> About Me </h1>
             <p> Hello, I am Lara Katerine, your dedicated guide on the path of personal and professional transformation. Here, success is not just a destination; It's our journey. <br> With me, you will:  </p>
             <p>
                 <ion-icon name="shield-sharp" style="width:27px; height:27px; position:relative; top:7.6px; color:#037486;"> </ion-icon>       <b> Overcome Any Challenge </b> <br>
@@ -205,14 +208,19 @@
                 <ion-icon name="reader" style="width:27px; height:27px; position:relative; top:7.6px; color:#037486;" > </ion-icon>            <b> Achieve Your Dreams    </b> <br>
             </p>
 
-            <a href="about.html" class="wave"> 
-                <div id="articles_btn_02">  
-                    <button style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; height:46px; width:180px; " > Read More </button>  
-                </div> 
-                <div id="articles_btn_02" style="position:absolute; top:-1px; left:200px;">  
-                    <button style="width:200px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; height:46px; " > Begin my Journey </button>  
-                </div>                 
-            </a>
+            <div class="wave"> 
+                <a href="about.html">
+                    <div id="articles_btn_02">
+                        <button style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; height:46px; width:180px; " > Read More </button>
+                    </div>
+                </a>
+
+                <a href="appointments.html">
+                    <div id="articles_btn_02" style="position:absolute; top:-1px; left:200px;">
+                        <button id="journey_button" style="width:200px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; height:46px; " > Begin my Journey </button>
+                    </div>
+                </a>              
+            </div>
         </div>
         <div id="section_02_coach-sitting"> <img src="assets/images/know-your-coach-boax-img.webp" alt=""> </div>
     </article>
@@ -297,18 +305,19 @@
 
             <div class="footer-col">
                 <h4> Contact Me </h4>
-                <form action="#" class="awesome-form">
-                    <input type="text" id="name" class="input-field" placeholder="Your Name">
-                    <input type="email" id="email" class="input-field" placeholder="Your Email">
+                <form action="https://api.web3forms.com/submit" method="POST" class="awesome-form">
+                    <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
+                    <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+                    <input type="email" id="email" class="input-field" placeholder="Your Email" required>
                     <select id="attendance" class="input-field">
-                        <option value=""> <span>Choose a Topic</span>    </option>
+                        <option value="choose_a_topic"> <span>Choose a Topic</span>    </option>
                         <option value="stress"> Career transition and advancement </option>
                         <option value="marriage">Relationship and communication skills improvement </option>
-                        <option value="other"> Personal development and goal setting  </option>
-                        <option value="other"> Work-life balance and prioritization  </option>
-                        <option value="other"> Financial management and wealth building </option>
-                        <option value="other"> Decision making and problem-solving skills development </option>
-                        <option value="other"> Confidence building and self-esteem improvement </option>
+                        <option value="perso"> Personal development and goal setting  </option>
+                        <option value="work"> Work-life balance and prioritization  </option>
+                        <option value="financi"> Financial management and wealth building </option>
+                        <option value="decisio"> Decision making and problem-solving skills development </option>
+                        <option value="confidenc"> Confidence building and self-esteem improvement </option>
                         <option value="other"> Other </option>
                     </select>
                     <input type="text" id="message" class="input-field" placeholder="Your Message">
@@ -382,7 +391,16 @@ buttons.forEach(button => {
         xhr.send(formData);
     });
 </script>
-</html>
+
+<script>
+    document.getElementById("read_more_button").onclick = function() {
+        window.location.href = "about.html";
+    };
+
+    document.getElementById("journey_button").onclick = function() {
+        window.location.href = "appointments.html";
+    };
+</script></html>
 
 
 

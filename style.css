@@ -73,10 +73,10 @@ img { height:auto; width:100%; }
 /* Section 02 */
 
 #section_02 { background:var(--bege); display:flex; align-items:center; justify-content: center; min-height:700px; flex-direction:column; display:none;  }
-#section_02 > h1 { margin-top:40px; margin-bottom:20px; font-family:var(--font-01);  font-style:normal; font-size:30px; font-weight:700; color: #575757; }
+#section_02 > h1 { margin-top:40px; margin-bottom:20px; font-family:var(--font-01);  font-style:normal; font-size:30px; font-weight:700; color: #000000; }
 #section_02 > article { height:590px; max-width:1403px; display:flex; flex-direction:row; align-items:center; justify-content:center; flex-wrap:wrap; margin-bottom:10px; gap:90px; } 
 #section_02_heading_container { max-width:400px; height:490px; min-width:370px; display:flex; align-items:flex-start; justify-content:space-between; flex-direction:column;  }
-#section_02_heading_container > h1 { font-family:var(--font-02); font-size:33px; margin-top:10px; color: #575757; font-style:italic;      }
+#section_02_heading_container > h1 { font-family:var(--font-02); font-size:33px; margin-top:10px; color: #004d58; font-style:italic;      }
 #section_02_heading_container > p  { font-family:var(--font-01); font-size:18px;  margin-top:10px; font-weight:900; color:rgb(54, 54, 54); }
 #section_02_coach-sitting          {  max-width:420px; height:490px; min-width:380px; display:flex; align-items:center; justify-content:center;  }
 
@@ -183,7 +183,7 @@ img { height:auto; width:100%; }
 .click_to_learn_more_02 { width:200px; height:48px; background-color:var(--light-blue); border-radius:7px; display:flex; align-items:center; }
 .click_to_learn_more_02 > img { width: 25px; margin-left:10px; }
 .click_to_learn_more_02 > h4#click_to_learn_more_01 {  margin-left:10px; font-family:Arial, Helvetica, sans-serif;  color:var(--bege); font-size:15px; font-weight:400; }
-.wave {  animation: waveEffect 3s ease-in-out infinite;  }
+.wave {  animation: waveEffect 3s ease-in-out infinite; width:410px; }
 
 @keyframes waveEffect { 0%, 100% { transform: translateY(0); } 25%, 75% { transform: translateY(-3px); } 50% { transform: translateY(0); } }
 

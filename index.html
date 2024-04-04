@@ -147,18 +147,7 @@
     <h1 style="font-style:italic; font-family:var(--font-02); font-size:50px;"> Here's what my Clients Say </h1>
     <div class="wrapper">
         <ul class="carousel">
-        <li class="card">
-            <a href="testimonials.html">
-                <ion-icon name="information-circle" style="width:30px; height:30px; position:relative; left:110px; bottom:20px; color:#037486"> </ion-icon>
-            </a>
-            <div class="img"> <img src="assets/images/mariia_dmitrieva.jpeg" alt="img" draggable="false"> </div>
-            <h2> Mariia Dmitrieva </h2> <span> Product Operations Analyst </span>
-            <div style="position:relative; top:30px;" id="card_social_media_container">
-                <a href="#"> <img src="assets/icons/instagram.svg" alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/linkedin.svg"  alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/tiktok.svg"    alt="instagram_icon" style="height:auto; width:30px;">  </a>
-            </div>
-        </li>
+
         <li class="card">
             <ion-icon name="information-circle" style="width:30px; height:30px; position:relative; left:110px; bottom:20px; color:#037486"> </ion-icon>
             <div class="img"> <img src="assets/images/hussien_hijazi.png" alt="img" draggable="false"> </div>
@@ -283,7 +272,7 @@
                 <div class="social-links">                    
                     <a href="https://www.linkedin.com/in/coachingwithlk/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 "><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -307,12 +296,12 @@
                 <h4> Contact Me </h4>
                 <form action="https://api.web3forms.com/submit" method="POST" class="awesome-form">
                     <input type="hidden" name="access_key" value="584f9840-6ad5-4d21-a239-8eaa32d8898c">
-                    <input type="text" id="first-name" class="input-field" placeholder="Your Name" required>
-                    <input type="email" id="email" class="input-field" placeholder="Your Email" required>
-                    <input type="text" name="topic"  class="input-field" placeholder="Topic" required>
+                    <input type="text" id="first-name" name="name" class="input-field" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" class="input-field" placeholder="Your Email" required>
+                    <input type="text" name="topic" class="input-field" placeholder="Topic" required>
                     <div class="h-captcha" data-captcha="true"></div>
-                    <input type="text" id="message" class="input-field" placeholder="Your Message">
-                    <button type="submit" class="submit-button">Submit</button>
+                    <input type="text" id="message" name="message" class="input-field" placeholder="Your Message">
+                    <button type="submit" class="submit-button" id="submit_Button">Submit</button>
                 </form>
             </div>
 
@@ -362,30 +351,39 @@ buttons.forEach(button => {
 </script>
 
 <script>
-    document.getElementById('download_form_button').addEventListener('click', function() {
-        var form = document.getElementById('download_form');
-        var formData = new FormData(form);
-        
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', form.action, true);
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                // Handle successful form submission
-                console.log('Form submitted successfully');
-                // Close the tab or window after submission
-                window.close();
-            } else {
-                // Handle form submission error
-                console.error('Form submission failed');
-            }
-        };
-        xhr.send(formData);
+    document.querySelectorAll('.card').forEach(function(card) {
+    card.addEventListener('click', function() {
+        // Redirect to testimonials.html
+        window.location.href = 'testimonials.html';
     });
+});
+</script>
+
+<script>
+document.querySelector('.submit-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+    
+    var form = document.querySelector('.awesome-form');
+    var formData = new FormData(form);
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', form.action, true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            console.log('Form submitted successfully');
+            setTimeout(function() {
+                window.location.href = 'thanks.html'; // Redirect to thanks.html after 1 second
+            }, 1000); // 1000 milliseconds = 1 second
+        } else {
+            console.error('Form submission failed');
+        }
+    };
+    xhr.send(formData);
+});
+
 </script>
 
 
-
-</html>
 
 
 

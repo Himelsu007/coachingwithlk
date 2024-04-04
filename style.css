@@ -79,9 +79,11 @@ img { height:auto; width:100%; }
 
 /* Section 04 */
 
-#section_04 {  max-height:910px; display:flex; align-items:center; justify-content:space-around;  width:100%; padding:10px; flex-direction:column; background-color:white;}
+#section_04 {  max-height:910px; display:flex; align-items:center; justify-content:space-around;  width:100%;  flex-direction:column; background-color:white;}
 
 #section_04 > article { max-height:1230px;  min-width:395px; max-width:1200px; display:flex;  align-items:center;  justify-content:center; }
+#section_04 > h1 { text-align:center; margin-top:10px; }
+
 
 /* Section 05 */
 
@@ -235,6 +237,7 @@ ul{ list-style: none; }
 .input-field { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box }
 .submit-button { width: 100%; background-color: #025c70; color: white; padding: 10px 0; margin: 10px 0; border: none; border-radius: 5px; cursor: pointer }
 .input-field.invalid { border: 1px solid red }
+
 
 /* -----------------------------------------------------------------------------------------------  Small TABLETS  ---------------------------------------------------------------------------------------- */
 

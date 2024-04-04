@@ -164,9 +164,9 @@
                 <div class="footer-col">
                     <h4>follow Me </h4>
                     <div class="social-links">                    
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/coachingwithlk/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -174,7 +174,7 @@
                     <ul>
                         <li><a href="articles.html"> Articles </a></li>
                         <li><a href="appointments.html"> Appointments </a></li>
-                        <li><a href="#section_001"> Free Workbook </a></li>
+                        <li><a href="about.html"> About Me </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -182,28 +182,20 @@
                     <ul>
                         <li><a href="#"> Privacy and Policy </a></li>
                         <li><a href="#"> Terms and conditions </a></li>
-                        <li><a href="#section_001"> Cookie Consent </a></li>
+                        <li><a href="#"> Cookie Consent </a></li>
                     </ul>
                 </div>
     
                 <div class="footer-col">
                     <h4> Contact Me </h4>
-                    <form action="#" class="awesome-form">
-                        <input type="text" id="name" class="input-field" placeholder="Your Name">
-                        <input type="email" id="email" class="input-field" placeholder="Your Email">
-                        <select id="attendance" class="input-field">
-                            <option value=""> <span>Choose a Topic</span>    </option>
-                            <option value="stress"> Career transition and advancement </option>
-                            <option value="marriage">Relationship and communication skills improvement </option>
-                            <option value="other"> Personal development and goal setting  </option>
-                            <option value="other"> Work-life balance and prioritization  </option>
-                            <option value="other"> Financial management and wealth building </option>
-                            <option value="other"> Decision making and problem-solving skills development </option>
-                            <option value="other"> Confidence building and self-esteem improvement </option>
-                            <option value="other"> Other </option>
-                        </select>
-                        <input type="text" id="message" class="input-field" placeholder="Your Message">
-                        <button type="submit" class="submit-button">Submit</button>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="awesome-form">
+                        <input type="hidden" name="access_key" value="584f9840-6ad5-4d21-a239-8eaa32d8898c">
+                        <input type="text" id="first-name" name="name" class="input-field" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" class="input-field" placeholder="Your Email" required>
+                        <input type="text" name="topic" class="input-field" placeholder="Topic" required>
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <input type="text" id="message" name="message" class="input-field" placeholder="Your Message">
+                        <button type="submit" class="submit-button" id="submit_Button">Submit</button>
                     </form>
                 </div>
     
@@ -216,7 +208,8 @@
 <script src="../javascript/reveal_animation.js"></script>
 <script src="../javascript/menu_hide_appear_function.js"></script>
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-<script src="../javascript/footer_year_auto_update.js"></script>
-<script src="../javascript/loader.js"></script>
+<script src="javascript/submission_handler_thanks_page.js"></script>
+<script src="javascript/submission_handler_thanks_page_02.js"></script>
+<script src="javascript/email_validation.js"></script><script src="../javascript/loader.js"></script><script src="../javascript/loader.js"></script>
 <script src="javascript/article_audio_system.js"></script>
 </html>

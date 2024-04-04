@@ -321,7 +321,10 @@
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="/javascript/articles_hover_click.js"></script>
 <script src="javascript/loader.js"></script>
-
+<script src="javascript/submission_handler_thanks_page.js"></script>
+<script src="javascript/submission_handler_thanks_page_02.js"></script>
+<script src="javascript/email_validation.js"></script>
+<script src="javascript/testimonials_click.js"></script>
 <script defer>
 const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
 const buttons = document.querySelectorAll("button");
@@ -332,79 +335,5 @@ buttons.forEach(button => {
     });
         });
 </script>
-
-<script>
-    document.getElementById("download_form").addEventListener("submit", function(event) {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    
-    // Perform input validation
-    var nameRegex = /^[A-Za-z\s]+$/; // Only alphabets and spaces allowed
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation
-
-    if (!nameRegex.test(name) || !emailRegex.test(email)) {
-        // Inputs are invalid, change container color to red
-        document.getElementById("section_01_container_F").style.backgroundColor = "red";
-        event.preventDefault(); // Prevent form submission
-    }
-});
-</script>
-
-<script>
-    document.querySelectorAll('.card').forEach(function(card) {
-    card.addEventListener('click', function() {
-        // Redirect to testimonials.html
-        window.location.href = 'testimonials.html';
-    });
-});
-</script>
-
-<script>
-document.querySelector('.submit-button').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
-    
-    var form = document.querySelector('.awesome-form');
-    var formData = new FormData(form);
-    
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', form.action, true);
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            console.log('Form submitted successfully');
-            setTimeout(function() {
-                window.location.href = 'thanks.html'; // Redirect to thanks.html after 1 second
-            }, 1000); // 1000 milliseconds = 1 second
-        } else {
-            console.error('Form submission failed');
-        }
-    };
-    xhr.send(formData);
-});
-</script>
-
-<script>
-    document.getElementById('download_form_button').addEventListener('click', function() {
-    var form = document.getElementById('download_form');
-    var formData = new FormData(form);
-    
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', form.action, true);
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            console.log('Form submitted successfully');
-            setTimeout(function() {
-                window.location.href = 'thanks.html'; // Redirect to thanks.html after 1 second
-            }, 1000); // 1000 milliseconds = 1 second
-        } else {
-            console.error('Form submission failed');
-        }
-    };
-    xhr.send(formData);
-});
-
-</script>
-
-
-
 
 

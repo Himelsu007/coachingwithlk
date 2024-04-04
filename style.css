@@ -144,7 +144,7 @@ img { height:auto; width:100%; }
 }
 
 #section_06_heading > h1 {  color:white; font-family:var(--font-01); font-size:35px; text-align:center;}
-#section_06_heading { margin-top:50px; margin-bottom:50px; border:1px solid white; min-width:340px;}
+#section_06_heading { margin-top:50px; margin-bottom:50px; min-width:340px;}
 
 #articles_btn > button { border:transparent; background-color:var(--bege); color:var(--light-blue); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; cursor:pointer;}
 #articles_btn_02 > button { border:transparent; background-color:#037486; color:rgba(255, 255, 255, 0.918); padding:10px 25px 10px 25px; border-radius:5px; font-weight:600; margin-top:40px; font-size:16px; }
@@ -176,7 +176,7 @@ img { height:auto; width:100%; }
 .articles_sub_container_AB:nth-child(6) > p { margin-bottom:90px; }
 .articles_sub_container_B {  border-top:1px solid gray; width:340px; height:38px; display:flex; align-items:center; justify-content:flex-start; }
 .articles_sub_container_B h4 {  margin-left:24px; color:gray; font-family:var(--font-03); font-size:13px; font-weight:400;}
-#articles_btn { max-width:300px; }
+#articles_btn { max-width:300px; margin-left:50px; display: flex; align-items:center; justify-content:center;}
 .click_to_learn_more { width:200px; height:38px; background-color:var(--bege); border-radius:7px; display:flex; align-items:center; }
 .click_to_learn_more > img { width: 23px; margin-left:10px; }
 .click_to_learn_more > h4#click_to_learn_more_01 { margin-left:10px; font-family:Arial, Helvetica, sans-serif; color:black; font-size:15px; font-weight:400; }
@@ -191,7 +191,7 @@ img { height:auto; width:100%; }
 
 #section_07 { background-color: #2b4162; background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); display:flex; align-items:center; justify-content:center; min-height:700px; }
 
-#section_07 > article { border:1px solid white; width:80%; display:flex; align-items:center; justify-content:space-between;  }
+#section_07 > article { width:80%; display:flex; align-items:center; justify-content:space-between;  }
 
 /* faq Container */
 
@@ -225,10 +225,6 @@ summary:focus { outline: none; }
 }
 
 @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-html::-webkit-scrollbar { width: 12px; }
-html::-webkit-scrollbar-track { border-radius: px; background-color: #e7e7e7; border: 1px solid #cacaca; box-shadow:inset 0 0 6px rgba(0, 0, 0, .3); }
-html::-webkit-scrollbar-thumb { border-radius: px; background-color: #037486; }
 
 
 

@@ -21,14 +21,9 @@
             --font-03:'DM Sans';
             --font-04:'MontSerrat';
             --font-05:'Proxima Nova Condensed'
-            --m: 4rem;
+            transition: all 0.3s ease;
 }
 
-@font-face {
-  font-family: 'satoshy';
-  src: url('assets/typography/satoshy/Satoshi-Medium.woff') format('woff'),  
-  url('') format('woff');   
-}
 
 .scrolling-text { white-space: nowrap; overflow: hidden; animation: scrollRight 10s linear infinite; }
 
@@ -36,49 +31,317 @@
 
 html,body { scroll-behavior:smooth; height:100vh; padding:0; background-color:var(--bege); margin:0;  }
 
-.outerdiv { width: 100%; min-height: 100vh; background: #EDF2F8; display: flex; align-items: center; justify-content: center; }
-.innerdiv { transform: scale(0.9); margin: 1rem; display: grid; grid-gap: 1.5rem; grid-template-rows: repeat(2,22rem); grid-template-columns: repeat(4,17rem); }
-.eachdiv
-{ padding: 1rem 2rem;  border-radius: 0.8rem;  box-shadow: 5px 5px 20px #6d6b6b6b; color: white; }
-.div1
-{ background: #733FC8; grid-column: 1/3; grid-row: 1/2;
-	background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg); background-repeat: no-repeat;
-    background-position-x: 25rem;
-}
-.div2 { background:#49556B;  grid-column: 3/4; grid-row: 1/2; }
-.div3 { background: white;   grid-column: 4/5;   grid-row: 1/3;  color: black; }
-.div4 { background: white; grid-column: 1/2;  grid-row: 2/3;   color: black; }
-.div5 { background: #18202D;	grid-column: 2/4;   grid-row: 2/3; }
-.userdetails { display: flex; }
-.imgbox { margin-right: 1rem; }
-.imgbox img { border-radius: 50%; width: 5rem; border: 2px solid #cec5c5; }
-.detbox { display: flex;   flex-direction: column; justify-content: center; }
-.detbox p {	margin: 0; }
-.detbox .name { color: hsl(0, 0%, 81%);   font-size: 0.9rem;   margin-bottom: 0.1rem; font-weight: 600; }
-.detbox .name.dark { color: #49505A; }
-.detbox .designatio { color: hsl(0, 0%, 81%); opacity: 50%; font-size: 0.8rem; }
-.detbox .designation.dark { color: #49505A; }
-.review h4 { font-size: 1.4rem; color: #F3DEFF; font-weight: 600;  line-height: 1.5;  margin-bottom: 0.8rem; }
-.review.dark h4 { color:#4B5258; }
-.review p {	font-size: 0.95rem;  color: #F3DEFF; font-weight: 500; opacity: 50%; line-height: 1.5; }
-.review.dark p { color: #0e0e0e; }
-.attribution { font-size: 1rem;  line-height: 1.5;   position: fixed;   bottom: 1rem;  right: 1rem;  text-align: right; }
-.attribution a { text-decoration: none; }
 
-@media only screen and (max-width: 1000px) {
-	.innerdiv { transform: scale(0.7); }
+blockquote {
+  padding: 0;
+  margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
-	.innerdiv { transform: scale(0.6); }
+section.t-bq-section {
+  padding: 30px;
+  margin-bottom: 60px;
 }
 
-@media only screen and (max-width: 600px) {
-	.div1 { background-position-x: 10rem; }
-	.innerdiv { display: flex; flex-direction: column; transform: scale(1); margin: 2rem; margin-bottom: 5rem; }
-	.attribution { position: relative; }
+.t-bq-wrapper.t-bq-wrapper-boxed {
+  max-width: 576px;
+  margin: 0 auto;
 }
 
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ========== 05. Paul ========== */
+
+.t-bq-quote-paul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-height: 250px;
+  box-shadow: 2px 2px 25px #cecece;
+  border-radius: 10px;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-pattern {
+  flex-basis: 80px;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
+  border-radius: 10px 0 0 10px;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-base {
+  flex-basis: calc(100% - 80px);
+  background: #ffffff;
+  padding: 40px 30px 50px 80px;
+  font-size: 11pt;
+  line-height: 1.62em;
+  border-radius: 0 10px 10px 0;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-qmark {
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  font-size: 42pt;
+  color: #999999;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-userpic {
+  position: absolute;
+  top: 80px;
+  left: 45px;
+  width: 70px;
+  height: 70px;
+  background: center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 2px dotted #777777;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author,
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
+  color: #777777;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author cite {
+  font-style: normal;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
+  font-size: 9pt;
+}
+
+@media screen and (max-width: 768px) {
+
+  .t-bq-quote-paul .t-bq-quote-paul-pattern {
+      flex-basis: 20px;
+  }
+
+  .t-bq-quote-paul .t-bq-quote-paul-base {
+      flex-basis: calc(100% - 20px);
+      padding: 100px 30px 50px 30px;
+  }
+
+  .t-bq-quote-paul .t-bq-quote-paul-userpic {
+      width: 50px;
+      height: 50px;
+      left: 40px;
+      top: 20px;
+  }
+
+  .t-bq-quote-paul .t-bq-quote-paul-qmark {
+      left: 100px;
+      top: 45px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ========== 06. Jasper ========== */
+
+.t-bq-quote-jasper {
+  position: relative;
+  box-shadow: 2px 2px 25px #cecece;
+  border-radius: 10px;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-pattern {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-pattern .t-bq-quote-jasper-qmark {
+  flex-basis: 100px;
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  font-size: 60pt;
+  color: #999999;
+  text-align: center;
+  height: 80px;
+  line-height: 90pt;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-userpic {
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 35px);
+  width: 70px;
+  height: 70px;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/strug.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-base {
+  background: #ffffff;
+  padding: 60px;
+  font-size: 11pt;
+  line-height: 1.62em;
+  border-radius: 0 0 10px 10px;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 2px dotted #777777;
+  text-align: center;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author,
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+  color: #777777;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-author cite {
+  font-style: normal;
+}
+
+.t-bq-quote-jasper .t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+  font-size: 9pt;
+}
+
+@media screen and (max-width: 768px) {
+
+  .t-bq-quote-jasper .t-bq-quote-jasper-base {
+      padding-left: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ========== 07. Horace ========== */
+
+.t-bq-quote-horace {
+  position: relative;
+  min-height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 25px #cecece;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-base {
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-meta {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px dotted #ffffff;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-meta .t-bq-quote-horace-author {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-meta .t-bq-quote-horace-author cite {
+  font-style: normal;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-meta .t-bq-quote-horace-source {
+  font-size: 10pt;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-qmark {
+  position: absolute;
+  top: 140px;
+  right: 5px;
+  font-size: 280pt;
+  color: #ffffff;
+  opacity: 0.17;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.t-bq-quote-horace .t-bq-quote-horace-userpic {
+  width: 70px;
+  height: 70px;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/strug.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .t-bq-quote-horace .t-bq-quote-horace-base {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+  .t-bq-quote-horace .t-bq-quote-horace-meta {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .t-bq-quote-horace .t-bq-quote-horace-meta .t-bq-quote-horace-userpic {
+      margin: 0 auto;
+      margin-bottom: 10px;
+  }
+
+}
 .footer_container{ max-width: 1470px; margin:auto; }
 .row_{ display: flex; flex-wrap: wrap  }
 ul{ list-style: none; }
@@ -87,7 +350,7 @@ ul{ list-style: none; }
 .footer-col h4{ font-size: 18px; color: #ffffff; text-transform: capitalize; margin-bottom: 35px; font-weight: 500; position: relative }
 .footer-col h4::before{ content: ''; position: absolute; left:0; bottom: -10px; background-color: #015e6c; height: 2px; box-sizing: border-box; width: 50px }
 .footer-col ul li:not(:last-child){ margin-bottom: 10px }
-.footer-col ul li a{ font-size: 16px; text-transform: capitalize; color: #ffffff; text-decoration: none; font-weight: 300; color: #bbbbbb; display: block; transition: all 0.3s ease }
+.footer-col ul li a{ font-size: 16px; text-transform: capitalize; color: #ffffff; text-decoration: none; font-weight: 300; color: #ffffff; display: block; transition: all 0.3s ease }
 .footer-col ul li a:hover{ color: #ffffff; padding-left: 8px }
 .footer-col .social-links a{ display: inline-block; height: 40px; width: 40px; background-color: rgba(255,255,255,0.2); margin:0 10px 10px 0; text-align: center; line-height: 40px; border-radius: 50%; color: #ffffff; transition: all 0.5s ease }
 .footer-col .social-links a:hover{ color: #24262b; background-color: #ffffff }

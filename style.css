@@ -70,7 +70,7 @@ img { height:auto; width:100%; }
 #section_02 > article { height:590px; max-width:1403px; display:flex; flex-direction:row; align-items:center; justify-content:center; flex-wrap:wrap; margin-bottom:10px; gap:90px; } 
 #section_02_heading_container { max-width:400px; height:490px; min-width:370px; display:flex; align-items:flex-start; justify-content:space-between; flex-direction:column;  }
 #section_02_heading_container > h1 { font-family:var(--font-02); font-size:33px; margin-top:10px; color: #004d58; font-style:italic;      }
-#section_02_heading_container > p  { font-family:var(--font-01); font-size:18px;  margin-top:10px; font-weight:900; color:rgb(54, 54, 54); }
+#section_02_heading_container > p  { font-family:var(--font-01); font-size:18px;  margin-top:10px; font-weight:500; color:rgb(54, 54, 54); }
 #section_02_coach-sitting          {  max-width:420px; height:490px; min-width:380px; display:flex; align-items:center; justify-content:center;  }
 
 

@@ -37,9 +37,7 @@ img { height:auto; width:100%; }
 /* Section 1 */
 
 #section_01
-{ min-height:420px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-around; flex-direction:row; 
-  background-image:url('/assets/images/mobile-banner-blur.webp'); background-repeat:no-repeat; background-size:cover; background-position:-70px;
-}
+{ min-height:420px; background-color:var(--bege); display:flex; align-items:center; justify-content:space-around; flex-direction:row; }
 
 #section_01 > article { height:420px; display:flex; align-items:center; justify-content:center; flex-direction:column; width:100%; backdrop-filter: blur(6px); background-color: #ffffff83; padding-left:20px; }
 #article_container { display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; height:260px; }

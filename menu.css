@@ -33,7 +33,7 @@
 /*===== BASE =====*/
 *, ::before, ::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { margin: var(--header-height) 0 0 0; font-family: var(--font-01 ); font-size: var(--normal-font-size); font-weight: 500;}
+body { margin: var(--header-height) 0 0 0; font-family: var(--font-01 ); font-size: var(--normal-font-size); font-weight: 500; overflow-x:hidden; }
 
 ul { margin: 0; padding: 0; list-style: none }
 

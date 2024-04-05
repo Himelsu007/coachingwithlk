@@ -33,8 +33,8 @@
 
 .inter_p { font-family:var(--font-01); font-optical-sizing: auto; line-height:25px; }
 
-html { scroll-behavior:smooth;background-color: #F5EDEA;}
-body {  height:100dvh; padding:0; background-color: #F5EDEA; }
+html { scroll-behavior:smooth;background-color: #F5EDEA; overflow-x:hidden;}
+body {  height:100dvh; padding:0; background-color: #F5EDEA;}
 body::-webkit-scrollbar { display: none; }
 
 .reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }

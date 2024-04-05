@@ -55,7 +55,7 @@
                 <div class="nav__social">
                     <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon></a>
                     <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"></ion-icon></a>
-                    <a href="#" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon></a>
+                    <a href="https://www.tiktok.com/@coachingwithlk?_t=8lH9zZJbKUa&_r=1" class="nav__social-icon" > <ion-icon name="logo-tiktok" style="position:relative; top:2px;">  </ion-icon></a>
                 </div>
             </div>
         </nav>
@@ -63,7 +63,9 @@
     </header>
     
     <section id="section_01">
-
+        <article>
+            <div id="photo_container_001"> </div>
+        </article>
 
         <article>
             <div id="section_01_article_02_container_A"> 
@@ -107,7 +109,7 @@
                     <div class="flip-card" id="flip-card-1">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <h2 class="title source_serif_h1"> Holistic Strategies </h2>
+                                <h class="title source_serif_h1"> Holistic Strategies </h>
                                 <p class="inter_p hidden_phone"> 
                                     My coaching fosters an enduring dedication to personal growth, 
                                     empowering you to consistently persue excellence and fulfillment throughout your journey. 
@@ -247,7 +249,7 @@
     </footer>
       
     </div>
-    
+
     </body>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="javascript/reveal_animation.js"></script>
@@ -272,6 +274,7 @@
         });
             });
     </script>
+
 <script>
     // Function to handle card orientation based on device
     function handleCardOrientation(cardId) {
@@ -279,32 +282,39 @@
         var cardFront = document.querySelector('#' + cardId + ' .flip-card-front');
         var cardInner = document.querySelector('#' + cardId + ' .flip-card-inner');
 
-        if (window.innerHeight > window.innerWidth) {
-            // Portrait orientation
-            cardBack.style.transform = 'rotateY(0deg)';
+        // Check if device is a laptop/desktop
+        if (!window.matchMedia("(max-width: 1024px)").matches) {
+            cardBack.style.transform = 'rotateY(180deg)'; // Set initial rotation to show back
             cardFront.style.transform = 'none';
             cardInner.style.transition = 'none';
         } else {
-            // Landscape orientation
-            cardBack.style.transform = 'rotateY(180deg)';
-            cardFront.style.transform = 'rotateY(180deg)';
-            cardInner.style.transition = 'transform 0.8s';
+            if (window.innerHeight > window.innerWidth) {
+                // Portrait orientation
+                cardBack.style.transform = 'rotateY(0deg)';
+                cardFront.style.transform = 'none';
+                cardInner.style.transition = 'none';
+            } else {
+                // Landscape orientation
+                cardBack.style.transform = 'rotateY(180deg)';
+                cardFront.style.transform = 'rotateY(180deg)';
+                cardInner.style.transition = 'transform 0.8s';
+            }
         }
     }
 
-    // Call the function for each card when the page loads and on orientation change
-    window.addEventListener('load', function() {
-        handleCardOrientation('flip-card-1');
-        handleCardOrientation('flip-card-2');
-        handleCardOrientation('flip-card-3');
-    });
+    // Call the function for each card immediately
+    handleCardOrientation('flip-card-1');
+    handleCardOrientation('flip-card-2');
+    handleCardOrientation('flip-card-3');
 
+    // Call the function on orientation change
     window.addEventListener('orientationchange', function() {
         handleCardOrientation('flip-card-1');
         handleCardOrientation('flip-card-2');
         handleCardOrientation('flip-card-3');
     });
 </script>
+
 
     </html>
 

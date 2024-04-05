@@ -45,7 +45,7 @@ a { text-decoration:none; font-weight:400;  } /* 1.6rem == 16px */
 img { height:auto; width:100%; }
 
 #section_01 {  display: flex; flex-wrap: wrap;  justify-content: center; }
-#section_01 > article {  width: calc(50% - 0px);   display: flex; flex-direction: column;  align-items: center; height: 650px; }
+#section_01 > article {  width: calc(50% - 0px);   display: flex; flex-direction: column;  align-items: center; height: 570px; }
 #section_01 > article:nth-child(1) { justify-content:center;  background-color:#F5EDEA; }
 #section_01 > article:nth-child(2) { justify-content:center; background-color: #F5EDEA; }
 #photo_container_001 { border-radius:50%; height:500px; width:400px; background-position-x:-0px; background-image:url('../../assets/images/lara-sitting-straight-face.JPG'); background-repeat:no-repeat; background-size:cover; }

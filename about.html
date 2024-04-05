@@ -63,9 +63,7 @@
     </header>
     
     <section id="section_01">
-        <article>
-            <div id="photo_container_001"> </div>
-        </article>
+
 
         <article>
             <div id="section_01_article_02_container_A"> 
@@ -106,7 +104,7 @@
                 <h1> Here's what I'm bringing to the table </h1>
             </div>
                 <div id="section_02_article_01_container_B">
-                    <div class="flip-card">
+                    <div class="flip-card" id="flip-card-1">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h2 class="title source_serif_h1"> Holistic Strategies </h2>
@@ -123,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" id="flip-card-2">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h2 class="title source_serif_h1"> Personalized Guidance </h2>
@@ -139,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
+                    <div class="flip-card" id="flip-card-3">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h2 class="title source_serif_h1"> Lifelong Commitment  </h2>
@@ -274,7 +272,40 @@
         });
             });
     </script>
-    
+<script>
+    // Function to handle card orientation based on device
+    function handleCardOrientation(cardId) {
+        var cardBack = document.querySelector('#' + cardId + ' .flip-card-back');
+        var cardFront = document.querySelector('#' + cardId + ' .flip-card-front');
+        var cardInner = document.querySelector('#' + cardId + ' .flip-card-inner');
+
+        if (window.innerHeight > window.innerWidth) {
+            // Portrait orientation
+            cardBack.style.transform = 'rotateY(0deg)';
+            cardFront.style.transform = 'none';
+            cardInner.style.transition = 'none';
+        } else {
+            // Landscape orientation
+            cardBack.style.transform = 'rotateY(180deg)';
+            cardFront.style.transform = 'rotateY(180deg)';
+            cardInner.style.transition = 'transform 0.8s';
+        }
+    }
+
+    // Call the function for each card when the page loads and on orientation change
+    window.addEventListener('load', function() {
+        handleCardOrientation('flip-card-1');
+        handleCardOrientation('flip-card-2');
+        handleCardOrientation('flip-card-3');
+    });
+
+    window.addEventListener('orientationchange', function() {
+        handleCardOrientation('flip-card-1');
+        handleCardOrientation('flip-card-2');
+        handleCardOrientation('flip-card-3');
+    });
+</script>
+
     </html>
 
 

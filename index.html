@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="#F5EDEA">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -20,18 +20,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/fav_icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/fav_icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/fav_icon/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/fav_icon/manifest.json">
+    <link rel="preconnect" rel="manifest" href="assets/icons/fav_icon/manifest.json">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="menu.css">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <title> Home </title>
 </head>
 
 <body>
-
     <div class="loading-page">
         <svg id="svg" data-name="Camada 10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
             <defs>
@@ -62,7 +61,7 @@
 <div class="container">
     <header>
         <div class="header">
-        <a href="index.html" class="header__logo"> <img  src="assets/icons/logo_letters_white.svg"> </a>
+        <a href="index.html" class="header__logo" aria-label="Home Page"> <img alt="logo" src="assets/icons/logo_letters_white.svg"> </a>
         <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
         <nav class="nav" id="nav-menu">       
             <div class="nav__content bd-grid">
@@ -70,35 +69,32 @@
                 <div class="nav__perfil">
                     <div class="nav__img"> </div>
                     <div>
-                        <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" style="width:100px;"> </a>
+                        <a href="index.html" class="nav__name"> <img  src="assets/icons/logo_letters_white.svg" alt="logo" style="width:100px;"> </a>
                         <span class="nav__profesion"> LIFE COACH </span>
                     </div>
                 </div>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item"> <a href="index.html" class="nav__link" style="color: #037486; font-weight: bold;">  Home </a> </li>
-                    <li class="nav__item"> <a href="appointments.html" class="nav__link">  Appointments  </a> </li>
-                    <li class="nav__item"> <a href="articles.html" class="nav__link">     Articles      </a> </li>
+                    <li class="nav__item"> <a href="index.html" class="nav__link" style="color: #037486; font-weight: bold;" aria-label="Home Page">  Home </a> </li>
+                    <li class="nav__item"> <a href="appointments.html" class="nav__link" aria-label="It leads to appointments page">  Appointments  </a> </li>
+                    <li class="nav__item"> <a href="articles.html" class="nav__link" aria-label="It leads to articles page">     Articles      </a> </li>
                     <li class="nav__item"> <a href="about.html" class="nav__link"> About Me </a> </li>
                 </ul>
             </div>
         <div class="nav__social">
-            <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon></a>
-            <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"></ion-icon></a>
-            <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " class="nav__social-icon" target="_blank"> <ion-icon name="logo-tiktok" style="position:relative; top:2px;"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/coachingwithlk/" class="nav__social-icon" target="_blank" aria-label="It leads to her social media"> <ion-icon name="logo-linkedin" style="position:relative; top:2px;"> </ion-icon></a>
+            <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav__social-icon" target="_blank" aria-label="It leads to her social media"> <ion-icon name="logo-instagram" style="position:relative; top:2px;"></ion-icon></a>
+            <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " class="nav__social-icon" target="_blank" aria-label="It leads to her social media"> <ion-icon name="logo-tiktok" style="position:relative; top:2px;"></ion-icon></a>
         </div>
     </header>
 
         <section id="section_01">
             <article>
                 <div id="article_container">
-                    <div id="section_logo_container" style="position:relative; right:62px;"> <img id="logo-small" src="assets/icons/logotipo_principal.svg"> </div>
+                    <div id="section_logo_container" style="position:relative; right:62px;"> <img id="logo-small" src="assets/icons/logotipo_principal.svg" alt="logo"> </div>
                     <div id="section_01_container_A"> <h1 style="font-size:34px;"> Fulfill Your Ultimate Potential  </h1> </div>
-                    <div id="section_01_container_B">
-                        <p> Do you feel stuck? Ready to overcome life's hurdles and unlock your inner strength?</p>
-                    </div>
-            
-                    <a href="appointments.html" class="book_free_consultation">
+                    <div id="section_01_container_B"> <p> Do you feel stuck? Ready to overcome life's hurdles and unlock your inner strength? </p> </div>
+                    <a href="appointments.html" class="book_free_consultation" aria-label="It leads to appointments page">
                         <button id="puta" class="section_01_btn"> <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:8px;"> </ion-icon>  Get Started Here </button>
                     </a>
                 </div>
@@ -110,18 +106,18 @@
             <div id="section_logo_container"> <img id="logo-small" src="assets/icons/logotipo_principal.svg">  </div>
             <div id="section_001_container_A"> <h1> Fulfill Your <br> Ultimate Potential </h1> </div>
             <div id="section_001_container_B"> <p> Do you feel stuck? Ready to overcome life's hurdles and unlock your inner strength? </p> </div>
-            <a href="appointments.html">
+            <a href="appointments.html" aria-label="It leads to appointments page">
                 <button id="puta" class="section_01_btn"> 
                     <ion-icon name="arrow-forward-circle-sharp" style="width:30px; height:30px; position:relative; right:13px;"> </ion-icon>  Get Started Here 
                 </button>
             </a>
         </div>
 
-        <div id="section_001_B"> <img src="assets/images/main-home-banner-img.png"> </div>
+        <div id="section_001_B"> <img src="assets/images/main-home-banner-img.webp"> </div>
         </section> 
 
     <section id="section_05">
-        <article id="section_05_article_02"> <img src="assets/images/workbook_fversion.png" alt="workbook"> </article> 
+        <article id="section_05_article_02"> <img src="assets/images/workbook_fversion.webp" alt="workbook"> </article> 
 
         <article id="section_05_article_01"> 
             <h1> <span style="font-family:var(--font-01); font-style:normal; font-weight:700;">Say Goodbye to </span> Stress and Anxiety </h1> <br>
@@ -136,7 +132,7 @@
             </form>
             <h5>    
                 By providing your information, you'll gain free access to exclusive insights, news, and upcoming workshops delivered straight to your inbox.
-                By proceeding you also agree to my <a> Terms of Use </a> and <a> Privacy Policy </a>.
+                By proceeding you also agree to my <a> Terms of Use </a> and <a href="privacy_policy.html"> Privacy Policy </a>.
             </h5>
         </article>
     </section>
@@ -145,25 +141,24 @@
     <h1 style="font-style:italic; font-family:var(--font-02); font-size:50px;"> Here's What My Clients Say </h1>
     <div class="wrapper">
         <ul class="carousel">
-
         <li class="card">
             <ion-icon name="information-circle" style="width:30px; height:30px; position:relative; left:110px; bottom:20px; color:#037486"> </ion-icon>
-            <div class="img"> <img src="assets/images/hussien_hijazi.png" alt="img" draggable="false"> </div>
+            <div class="img"> <img src="assets/images/hussien_hijazi.webp" alt="clients" draggable="false"> </div>
             <h2> Hussien Hijazi </h2> <span> Youtuber & Entrepenuer  </span>
             <div style="position:relative; top:30px;" id="card_social_media_container">
                 <a href="#"> <img src="assets/icons/instagram.svg" alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/linkedin.svg"  alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/tiktok.svg"    alt="instagram_icon" style="height:auto; width:30px;">  </a>
+                <a href="#"> <img src="assets/icons/linkedin.svg"  alt="linkedin_icon" style="height:auto; width:30px;">  </a>
+                <a href="#"> <img src="assets/icons/tiktok.svg"    alt="tiktok_icon" style="height:auto; width:30px;">  </a>
             </div>
         </li>
         <li class="card">
             <ion-icon name="information-circle" style="width:30px; height:30px; position:relative; left:110px; bottom:20px; color:#037486"> </ion-icon>
-            <div class="img"> <img src="assets/images/lara_mh.png" alt="img" draggable="false"> </div>
+            <div class="img"> <img src="assets/images/lara_mh.webp" alt="img" draggable="false"> </div>
             <h2> Lara Mahmoud </h2> <span> Model </span>
             <div style="position:relative; top:30px;" id="card_social_media_container">
                 <a href="#"> <img src="assets/icons/instagram.svg" alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/linkedin.svg"  alt="instagram_icon" style="height:auto; width:30px;">  </a>
-                <a href="#"> <img src="assets/icons/tiktok.svg"    alt="instagram_icon" style="height:auto; width:30px;">  </a>
+                <a href="#"> <img src="assets/icons/linkedin.svg"  alt="linkedin_icon" style="height:auto; width:30px;">  </a>
+                <a href="#"> <img src="assets/icons/tiktok.svg"    alt="tiktok_icon" style="height:auto; width:30px;">  </a>
             </div>
         </li>
 
@@ -210,7 +205,7 @@
             </p>
 
             <div class="wave"> 
-                <a href="about.html">
+                <a href="about.html" aria-label="Read more about her biography">
                     <div id="articles_btn_02">
                         <button style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; height:46px; width:180px; " > Read More </button>
                     </div>
@@ -223,7 +218,7 @@
                 </a>              
             </div>
         </div>
-        <div id="section_02_coach-sitting"> <img src="assets/images/know-your-coach-boax-img.webp" alt=""> </div>
+        <div id="section_02_coach-sitting"> <img src="assets/images/know-your-coach-boax-img.webp" alt="coach_banner"> </div>
     </article>
 </section> 
 
@@ -251,7 +246,7 @@
                 <p>
                     Ever felt like you're stuck in a loop, unable to see beyond the same old routine? A life coach steps in like a breath of fresh air.
                 </p>
-                <a href="article_02.html"> Continue Reading >></a>
+                <a href="article_02.html" aria-label="It leads to the article number 2"> Continue Reading >></a>
             </div>
             <div class="articles_sub_container_B"> <h4> 09 ∙ 10 ∙ 2023 </h4> </div>
         </div>
@@ -267,7 +262,7 @@
                     getting things done shows they live life
                     to the fullest.
                 </p>
-                <a href="article_03.html"> Continue Reading >></a>
+                <a href="article_03.html" aria-label="It leads to article number 3"> Continue Reading >></a>
             </div>
             <div class="articles_sub_container_B"> <h4> 10 ∙ 16 ∙ 2023 </h4> </div>
         </div>
@@ -282,9 +277,9 @@
             <div class="footer-col">
                 <h4>follow Me </h4>
                 <div class="social-links">                    
-                    <a href="https://www.linkedin.com/in/coachingwithlk/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/coachingwithlk/" target="_blank" aria-label="It leads to social media"> <i class="fab fa-linkedin-in"> </i></a>
+                    <a href="https://instagram.com/coachingwithlk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" aria-label="It leads to social media"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@coachingwithlk?_t=8l746QaFvoO&_r=1 " target="_blank" aria-label="It leads to social media"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -298,7 +293,7 @@
             <div class="footer-col">
                 <h4> Terms of use </h4>
                 <ul>
-                    <li><a href="404.html"> Privacy and Policy </a></li>
+                    <li><a href="privacy_policy.html"> Privacy and Policy </a></li>
                     <li><a href="404.html"> Terms and conditions </a></li>
                     <li><a href="404.html"> Cookie Consent </a></li>
                 </ul>
@@ -316,7 +311,6 @@
                     <button type="submit" class="submit-button" id="submit_Button">Submit</button>
                 </form>
             </div>
-
         </div>
     </div>
 </footer>
@@ -347,6 +341,3 @@ buttons.forEach(button => {
         });
 </script>
 
-<script>
-    
-</script>

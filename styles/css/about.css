@@ -244,6 +244,6 @@ ul{ list-style: none; }
 .input-field.invalid { border: 1px solid red }
 
 
- @media(min-width: 1492px) {
+ @media(min-width: 995px) {
   .hidden_phone { display:none; }
  }

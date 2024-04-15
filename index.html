@@ -110,27 +110,29 @@
             </a>
         </div>
         <div id="section_001_B"> <img src="assets/images/main-home-banner-img.webp"> </div>
+        </section> 
+        <a href="#Workbook"> </a>
+        <section id="Workbook">
+            <article id="Workbook_article_02">
+                <img src="assets/images/workbook_fversion.webp" alt="workbook_img">
+            </article>
+            <article id="Workbook_article_01">
+                <h1><span style="font-family:var(--font-01); font-style:normal; font-weight:700;">Say Goodbye to</span> Stress and Anxiety</h1><br>
+                <img src="assets/images/workbook_fversion.webp" alt="workbook">
+                <p>Claim your <span style="font-weight:bold; text-decoration:underline;">FREE</span> Workbook and begin your transformational journey towards managing stress and anxiety effectively.</p>
+                <form id="download_form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
+                    <input type="text" id="name" name="name" placeholder="First Name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button id="download_form_button" type="button">Download Workbook</button>
+                </form>
+                <h5>
+                    By providing your information, you'll gain free access to exclusive insights, news, and upcoming workshops delivered straight to your inbox.
+                    By proceeding you also agree to my <a>Terms of Use</a> and <a href="privacy_policy.html">Privacy Policy</a>.
+                </h5>
+            </article>
         </section>
-        <a href="#Workbook"></a>
-    <section id="Workbook">
-        <article id="Workbook_article_02"> <img src="assets/images/workbook_fversion.webp" alt="workbook"> </article> 
-        <article id="Workbook_article_01"> 
-            <h1> <span style="font-family:var(--font-01); font-style:normal; font-weight:700;">Say Goodbye to </span> Stress and Anxiety </h1> <br>
-            <img src="assets/images/workbook_fversion.webp" alt="workbook"> 
-            <p>  Claim your <span style="font-weight:bold; text-decoration:underline;">FREE</span> Workbook and begin your tranformational journey towards managing stress and anxiety effectively. </p>
-            <form id="download_form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="62c35440-c21d-4728-836a-1f4af6bf4428">
-                <input type="text" id="name" name="name" placeholder="First Name" required>
-                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
-                <div class="h-captcha" data-captcha="true"></div>
-                <button id="download_form_button" type="button">Download Workbook</button>
-            </form>
-            <h5>    
-                By providing your information, you'll gain free access to exclusive insights, news, and upcoming workshops delivered straight to your inbox.
-                By proceeding you also agree to my <a> Terms of Use </a> and <a href="privacy_policy.html"> Privacy Policy </a>.
-            </h5>
-        </article>
-    </section>
 
 <section  id="section_04">
     <h1 style="font-style:italic; font-family:var(--font-02); font-size:50px;"> Here's What My Clients Say </h1>
@@ -334,10 +336,4 @@ buttons.forEach(button => {
         });
 </script>
 
-<script>
-    document.querySelector('a[href="#Workbook"]').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('Workbook').scrollIntoView({ behavior: 'smooth' }); 
-    });
-</script>
 

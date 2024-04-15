@@ -110,10 +110,11 @@
             </a>
         </div>
         <div id="section_001_B"> <img src="assets/images/main-home-banner-img.webp"> </div>
-        </section> 
-    <section id="section_05">
-        <article id="section_05_article_02"> <img src="assets/images/workbook_fversion.webp" alt="workbook"> </article> 
-        <article id="section_05_article_01"> 
+        </section>
+        <a href="#Workbook"></a>
+    <section id="Workbook">
+        <article id="Workbook_article_02"> <img src="assets/images/workbook_fversion.webp" alt="workbook"> </article> 
+        <article id="Workbook_article_01"> 
             <h1> <span style="font-family:var(--font-01); font-style:normal; font-weight:700;">Say Goodbye to </span> Stress and Anxiety </h1> <br>
             <img src="assets/images/workbook_fversion.webp" alt="workbook"> 
             <p>  Claim your <span style="font-weight:bold; text-decoration:underline;">FREE</span> Workbook and begin your tranformational journey towards managing stress and anxiety effectively. </p>
@@ -331,5 +332,12 @@ buttons.forEach(button => {
     audio.play();
     });
         });
+</script>
+
+<script>
+    document.querySelector('a[href="#Workbook"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('Workbook').scrollIntoView({ behavior: 'smooth' }); 
+    });
 </script>
 

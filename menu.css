@@ -4,11 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
-
 
 :root {
   
@@ -20,71 +17,46 @@
   --font-01:'Inter';
   --normal-font-size: 1rem;
   --small-font-size: .813rem;
-
-  /*===== z index =====*/
   --z-fixed: 100;
   --font-02:'Playfair Display';
   --font-03:'DM Sans';
   --font-04:'MontSerrat';
-  --font-05:'Proxima Nova Condensed'
 }
 
-
-/*===== BASE =====*/
 *, ::before, ::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 body { margin: var(--header-height) 0 0 0; font-family: var(--font-01 ); font-size: var(--normal-font-size); font-weight: 500; overflow-x:hidden; }
-
 ul { margin: 0; padding: 0; list-style: none }
-
 a { text-decoration: none; }
 img { max-width: 100%; height: auto }
-
 .bd-grid { max-width: 1024px; display: -ms-grid; display: grid; -ms-grid-columns: 100%; grid-template-columns: 100%; margin-left: 1.5rem; margin-right: 1.5rem; }
-
-/*===== HEADER =====*/
 .header { 
-  width: 100%; height: var(--header-height); position: fixed; top: 0; left: 0; padding: 0 1.5rem; background-color: var(--dark-color); z-index: var(--z-fixed); align-items: center; 
-  display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; -webkit-box-align: center; 
+width: 100%; height: var(--header-height); position: fixed; top: 0; left: 0; padding: 0 1.5rem; background-color: var(--dark-color); z-index: var(--z-fixed); align-items: center; 
+display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; -webkit-box-align: center; 
 }
 
 .header__logo > img { width:100px; }
 .header__toggle { font-size: 1.5rem; color: var(--white-color); cursor: pointer; }
-
-/*===== NAV =====*/
 @media screen and (max-width: 900px) {
 .nav { position: fixed; top: 0; left: -100%; background-color: var(--dark-color); color: var(--white-color); width:100%; height:100vh; padding: 1.5rem 0; z-index: var(--z-fixed); -webkit-transition: .5s; transition: .5s; } }
-
 .nav__content { height: 100%; -ms-grid-rows: max-content 1fr max-content; grid-template-rows: -webkit-max-content 1fr -webkit-max-content; grid-template-rows: max-content 1fr max-content; row-gap: 2rem; }
 .nav__close { position: absolute; right: 1.5rem; font-size: 1.3rem; padding: .25rem; background-color: var(--dark-color-alt); border-radius: 50%; cursor: pointer; }
-
 .nav__img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-top: .25rem; 
   margin-bottom: .8rem; width:  86px; height: 86px; background-repeat:no-repeat; background-size:cover; background-position-y:-13px; 
   background-image:url('../assets/images/lara-sitting-straight-face.webp');  border-radius: 50%; overflow: hidden;
 }
-
 .nav__img img { width:100%;  }
 .nav__name { display: block; color: var(--white-color);}
 .nav__profesion { font-size: var(--small-font-size) }
 .nav__menu { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center }
 .nav__item { margin: 2.5rem 0 }
 .nav__link { color: var(--white-color); position: relative; }
-
 .nav__link::before { content: ""; position: absolute; bottom: -0.7px; left: 0; width: 0; height: 2px; background-color: #037486; transition: width 0.3s ease-in-out; }
 .nav__link:hover::before { width: 100%; }
-
 .nav__social {  display:flex; align-items:center; justify-content:center; }
 .nav__social-icon { font-size: 1.1rem; color: var(--white-color); margin-right: 1rem; border:3px solid rgba(255, 255, 255, 0.691); padding:8px 10px; border-radius:50%;}
 .nav__social-icon:hover { color: var(--first-color) }
-
-/*Aparecer menu*/
 .show { left: 0 }
-
-/*Active menu*/
-
-/*===== MEDIA QUERIES =====*/
 @media screen and (min-width: 900px) {
-
 .header { height: calc(var(--header-height) + 1rem); }
 .header__logo, .header__toggle { display: none; }
 .nav { width: 100%; }
@@ -96,95 +68,8 @@ img { max-width: 100%; height: auto }
 .nav__list { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .nav__item { margin: 0 .25rem; }
 .nav__link { padding: .5rem .8rem; border-radius: .25rem; }
-
-ul {
-  list-style: none;
-}
-
-.example-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.example-2 .icon-content {
-  margin: 0 10px;
-  position: relative;
-}
-.example-2 .icon-content .tooltip {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 15px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.example-2 .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -50px;
-}
-.example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 20%;
-  color: #4d4d4d;
-  background-color: #ffff;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover {
-  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
-}
-.example-2 .icon-content a svg {
-  position: relative;
-  z-index: 1;
-  width: 20px;
-  height:20px;
-}
-.example-2 .icon-content a:hover {
-  color: white;
-}
-.example-2 .icon-content a .filled {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover .filled {
-  height: 100%;
-}
-.example-2 .icon-content a[data-social="spotify"] .filled,
-.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
-  background-color: #1db954;
-}
-.example-2 .icon-content a[data-social="pinterest"] .filled,
-.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
-  background-color: #bd081c;
-}
-.example-2 .icon-content a[data-social="dribbble"] .filled,
-.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-  background-color: #ea4c89;
-}
-.example-2 .icon-content a[data-social="telegram"] .filled,
-.example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
-  background-color: #0088cc;
-}
+ul { list-style: none; }
 
 }
 
-@media screen and (min-width: 1024px) {
-  .bd-grid { margin-left: auto; margin-right: auto; }
-}
+@media screen and (min-width: 1024px) { .bd-grid { margin-left: auto; margin-right: auto; } }

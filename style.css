@@ -16,6 +16,14 @@
         --font-02:'Playfair Display';
         --font-03:'DM Sans';
         --m: 4rem;
+        --header-height: 3.2rem;
+        --first-color: #037486;
+        --dark-color: #070D1F;
+        --dark-color-alt: #282B3A;
+        --white-color: #E6E7E9;
+        --normal-font-size: 1rem;
+        --small-font-size: .813rem;
+        --z-fixed: 100;
 }
 
 

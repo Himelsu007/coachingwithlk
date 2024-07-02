@@ -31,7 +31,7 @@
 
 @keyframes scrollRight { 0% { transform: translateX(0%); } 100% { transform: translateX(100%); } }
 
-html,body { scroll-behavior:smooth; height:100vh;  background-color:var(--bege);  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x:hidden; }
+html,body { scroll-behavior:smooth; height:100vh;  background-color:var(--bege);  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x:hidden;  }
 body::-webkit-scrollbar { display: none; }
 .reveal {  position: relative; transform:translateY(60px); opacity:0; transition:all 2s ease; }
 .reveal.active {  transform:translateY(1px); opacity:1; }
